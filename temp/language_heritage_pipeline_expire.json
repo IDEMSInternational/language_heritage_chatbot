@@ -3547,7 +3547,7 @@
         "stickies": {}
       },
       "revision": 302,
-      "expire_after_minutes": 10080,
+      "expire_after_minutes": 60,
       "localization": {}
     },
     {
@@ -3868,7 +3868,7 @@
         },
         "stickies": {}
       },
-      "expire_after_minutes": 10080,
+      "expire_after_minutes": 60,
       "language": "eng",
       "localization": {},
       "name": "Test 2 - Grouped structure",
@@ -5660,7 +5660,7 @@
         },
         "stickies": {}
       },
-      "expire_after_minutes": 10080,
+      "expire_after_minutes": 60,
       "language": "eng",
       "localization": {},
       "name": "Test 3 - Grouped consent",

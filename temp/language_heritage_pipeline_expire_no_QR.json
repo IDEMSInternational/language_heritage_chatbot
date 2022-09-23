@@ -14,12 +14,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Are you a man or a woman?",
+              "text": "Are you a man or a woman?\n\nPlease select the number for the following options:\n1. Man\n2. Woman",
               "type": "send_msg",
-              "quick_replies": [
-                "Man",
-                "Woman"
-              ],
+              "quick_replies": [],
               "uuid": "66e6f1f2-e02f-4137-858b-6b7c79c0017e"
             }
           ],
@@ -57,7 +54,7 @@
             "cases": [
               {
                 "arguments": [
-                  "M Man Male"
+                  "M,Man,Male,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "29454065-1c72-44c2-a2b2-fdc2aeae73ad",
@@ -65,7 +62,7 @@
               },
               {
                 "arguments": [
-                  "F Woman W Female"
+                  "F,Woman,W,Female,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f7995f02-36c6-4034-a6dc-c4ec8d35518c",
@@ -135,13 +132,10 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you have great-grand children?",
+              "text": "Do you have great-grand children?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
               "all_urns": false,
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "8dee88aa-33eb-4dac-a588-150656633d92"
             }
           ],
@@ -161,7 +155,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "e9f573ac-2e74-41dc-8bee-fe53595cec09",
@@ -169,7 +163,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "ebf8cc45-8e98-40d1-a0a6-3a8fea04cd54",
@@ -237,12 +231,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you have grand-children?",
+              "text": "Do you have grand-children?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "3edae814-a9cd-441f-a7d2-c29bb8bcdebd"
             }
           ],
@@ -262,7 +253,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "859c0394-c38b-49d7-b479-526fffde138f",
@@ -270,7 +261,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "3854c7b8-a5a1-4438-b35b-f03fa8c557b3",
@@ -338,12 +329,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you have children?",
+              "text": "Do you have children?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "ac3bc7a2-02d1-46da-a3a3-8590ead2dae9"
             }
           ],
@@ -381,7 +369,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "dd07fcc2-2514-4701-9fb3-62338c1c442b",
@@ -389,7 +377,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "5c5e1d97-b57d-4a8c-8124-a226964bbece",
@@ -439,12 +427,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "How old are you?",
+              "text": "How old are you?\n\nPlease select the number for the following options:\n1. 70+\n2. Under 70",
               "type": "send_msg",
-              "quick_replies": [
-                "70+",
-                "Under 70"
-              ],
+              "quick_replies": [],
               "uuid": "50ec74b7-708c-4f5e-91c1-524fb19bc334"
             }
           ],
@@ -466,7 +451,7 @@
                 "arguments": [
                   "70"
                 ],
-                "type": "has_number_gte",
+                "type": "has_any_word",
                 "uuid": "d0290c64-a83f-4d64-b95d-81427b9bf2fd",
                 "category_uuid": "5ac2c83b-c714-4a8e-9532-39f268f91626"
               },
@@ -474,7 +459,7 @@
                 "arguments": [
                   "69"
                 ],
-                "type": "has_number_lte",
+                "type": "has_any_word",
                 "uuid": "56f26e65-a2ed-4840-b407-2cd9c256df6f",
                 "category_uuid": "c7de4d20-8d84-48b6-8ee1-0fa14a457b1d"
               },
@@ -488,7 +473,7 @@
               },
               {
                 "arguments": [
-                  "under"
+                  "under,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "7c77a1bd-5991-46dc-9c59-18ee9971ca5d",
@@ -556,12 +541,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "How old are you?\n",
+              "text": "How old are you?\n\n\nPlease select the number for the following options:\n1. 50-70\n2. Under 50",
               "type": "send_msg",
-              "quick_replies": [
-                "50-70",
-                "Under 50"
-              ],
+              "quick_replies": [],
               "uuid": "7738ad43-b2b1-4d7b-869a-99fb6a10c248"
             }
           ],
@@ -584,7 +566,7 @@
                   "50",
                   "70"
                 ],
-                "type": "has_number_between",
+                "type": "has_any_word",
                 "uuid": "223bf8c0-aeb2-4ba6-a0da-645cb4f661c6",
                 "category_uuid": "ef884baf-3d04-4fe7-80a3-36346de8eea5"
               },
@@ -592,13 +574,13 @@
                 "arguments": [
                   "50"
                 ],
-                "type": "has_number_lt",
+                "type": "has_any_word",
                 "uuid": "d18e355b-0a3f-46cd-9698-21137160f65c",
                 "category_uuid": "9b639d90-620b-4d28-9b8e-0745d23e4ea3"
               },
               {
                 "arguments": [
-                  "under younger"
+                  "under,younger,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "4317516e-d6b8-4f90-885d-b111f9dede38",
@@ -666,12 +648,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "How old are you?",
+              "text": "How old are you?\n\nPlease select the number for the following options:\n1. 30-50\n2. Under 30",
               "type": "send_msg",
-              "quick_replies": [
-                "30-50",
-                "Under 30"
-              ],
+              "quick_replies": [],
               "uuid": "77177c01-6ee4-4a67-b97b-46286f8b3b89"
             }
           ],
@@ -712,7 +691,7 @@
                   "30",
                   "50"
                 ],
-                "type": "has_number_between",
+                "type": "has_any_word",
                 "uuid": "d8584bb8-6ec7-4a36-b23b-56037f689e14",
                 "category_uuid": "c2314c59-a609-4f20-b9be-06701c96bc9b"
               },
@@ -720,13 +699,13 @@
                 "arguments": [
                   "30"
                 ],
-                "type": "has_number_lt",
+                "type": "has_any_word",
                 "uuid": "898338a4-6f7d-4fe8-9e68-448ef75eab77",
                 "category_uuid": "6e8e8717-7e60-4742-815e-507eeb11d04f"
               },
               {
                 "arguments": [
-                  "under younger"
+                  "under,younger,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "8cde84ea-e7c8-46ee-9463-6bebb60ff979",
@@ -776,12 +755,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Did you learn Yiddish at home, as a child?",
+              "text": "Did you learn Yiddish at home, as a child?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "bf9f5221-9358-4187-98a5-42e62026eee2"
             }
           ],
@@ -819,7 +795,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "6874ade4-adef-4d6a-b63c-24d3c492b750",
@@ -827,7 +803,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "dab18a3d-d03f-4a4c-8599-bcc13d7e5ff8",
@@ -877,12 +853,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Did you learn Yiddish in cheder?",
+              "text": "Did you learn Yiddish in cheder?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "ef4f3922-dd2e-4319-a6fc-b7513810bb7a"
             }
           ],
@@ -920,7 +893,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b4b02027-ade5-4a75-90e8-c631774b6729",
@@ -928,7 +901,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "2e369e7f-7e16-4f7a-a34f-575a97b36df0",
@@ -978,12 +951,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Did you learn Yiddish in the yeshivah?",
+              "text": "Did you learn Yiddish in the yeshivah?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "0cd84ab3-5a17-4ddb-bf89-10a1a6eb6300"
             }
           ],
@@ -1021,7 +991,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "0cc3d3b9-11b9-464c-9188-01fb02b23e15",
@@ -1029,7 +999,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "91f4e319-37e7-4dd9-bfb6-7f61dcab2641",
@@ -1079,12 +1049,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Did you learn Yiddish when you were already an adult?",
+              "text": "Did you learn Yiddish when you were already an adult?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "9f3301a1-1c95-4387-9988-b74b8ef97d76"
             }
           ],
@@ -1122,7 +1089,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b52dadb7-1abd-49a9-8d7e-bffcce79b08f",
@@ -1130,7 +1097,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "10dc4519-7468-4c8d-836b-cb5c265e08bf",
@@ -1180,12 +1147,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you currently live in the USA?",
+              "text": "Do you currently live in the USA?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "3a3ddbfa-ba94-46e6-8e13-8343c3191205"
             }
           ],
@@ -1223,7 +1187,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "9faf1bc0-3bf8-440c-967d-6254eb7cd5f5",
@@ -1231,7 +1195,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "1c9db403-925b-44d1-b0f9-d8a8ffeaab4a",
@@ -1281,12 +1245,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you currently live in Israel?",
+              "text": "Do you currently live in Israel?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "420e1668-8f01-4936-aa88-6e8f5dd564f2"
             }
           ],
@@ -1324,7 +1285,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "0db73adc-9f50-4289-844a-2a052fcee152",
@@ -1332,7 +1293,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b6eab9a7-6e3f-4746-8fd9-1190bd1059ed",
@@ -1382,12 +1343,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you currently live in Great Britain?",
+              "text": "Do you currently live in Great Britain?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "d64f9fa3-8e71-4452-9710-51ee3b37e253"
             }
           ],
@@ -1425,7 +1383,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b71a9530-2a85-49bf-94b9-c432d33d7bb3",
@@ -1433,7 +1391,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "7b85cddc-2792-4f8f-83e6-4e3ce046e90b",
@@ -1483,12 +1441,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you currently live in Canada?",
+              "text": "Do you currently live in Canada?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "73c0e665-4a5a-4745-ab19-ecc723834a90"
             }
           ],
@@ -1526,7 +1481,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "1a941d6b-3eb9-4e1d-b978-9ebc27922418",
@@ -1534,7 +1489,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "95fa2555-e4d9-498b-8df6-12df887fd6df",
@@ -1584,12 +1539,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you currently live in Belgium?",
+              "text": "Do you currently live in Belgium?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "31b6b5a1-3415-440e-8ad3-3a77cf485dc3"
             }
           ],
@@ -1609,7 +1561,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "e345c995-09b1-419a-8344-42fb5256989a",
@@ -1617,7 +1569,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "16dd21ec-9279-434b-a67f-88b9a73df9b4",
@@ -1685,12 +1637,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "At the time when you learnt Yiddish, did you live in the USA?",
+              "text": "At the time when you learnt Yiddish, did you live in the USA?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "efb11ca2-83ac-45f9-a81b-69b1a1518645"
             }
           ],
@@ -1710,7 +1659,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b0980fb7-c8ed-4dee-81aa-99f7f3f89ba0",
@@ -1718,7 +1667,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "841526be-a87f-499b-8cba-5639f2cef813",
@@ -1786,12 +1735,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "At the time when you learnt Yiddish, did you live in Israel?",
+              "text": "At the time when you learnt Yiddish, did you live in Israel?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "a0df11f0-1414-416a-b27a-a9e0287909f5"
             }
           ],
@@ -1829,7 +1775,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "47edad8b-5015-4d4c-913b-ee707ebc8b8f",
@@ -1837,7 +1783,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "5b5deef4-915f-40f8-88a7-d5a621b0f8e3",
@@ -1887,12 +1833,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "At the time when you learnt Yiddish, did you live in Great Britain?",
+              "text": "At the time when you learnt Yiddish, did you live in Great Britain?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "00e8b25a-f49a-450d-beb9-680b87fb44d5"
             }
           ],
@@ -1930,7 +1873,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "ff39d234-6b81-4915-8e4c-3631ee6566b5",
@@ -1938,7 +1881,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "2524f017-7d2c-451d-83e3-b701f0db72f1",
@@ -1988,12 +1931,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "At the time when you learnt Yiddish, did you live in Canada?",
+              "text": "At the time when you learnt Yiddish, did you live in Canada?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "6636ec05-c956-4ca3-a9bf-e95cc7c97459"
             }
           ],
@@ -2031,7 +1971,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "3f34e88d-bb75-4838-a5ff-92f56fa13be6",
@@ -2039,7 +1979,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "fced6986-56cc-4665-8c7b-9bee9bd4a197",
@@ -2089,12 +2029,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "At the time when you learnt Yiddish, did you live in Belgium?",
+              "text": "At the time when you learnt Yiddish, did you live in Belgium?\n\nPlease select the number for the following options:\n1. Yes\n0. No",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes",
-                "No"
-              ],
+              "quick_replies": [],
               "uuid": "2acab153-7523-49ca-8ec0-1941868ea483"
             }
           ],
@@ -2132,7 +2069,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "60a9ffa7-e7d3-41da-9f14-7c90d766e83a",
@@ -2140,7 +2077,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,0,"
                 ],
                 "type": "has_any_word",
                 "uuid": "9666036c-fb26-4b8c-8b01-56059063fda7",
@@ -2190,12 +2127,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "I consent to my personal information being kept by Zaydimayses.",
+              "text": "I consent to my personal information being kept by Zaydimayses.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "ce021ef0-5ed8-4733-94e2-9f39ff48974e"
             }
           ],
@@ -2233,7 +2167,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f2f80769-6125-4f97-9914-c7af8f25bfb9",
@@ -2241,7 +2175,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "2b626bd5-00ae-4d32-951b-e4d7fda5d740",
@@ -2251,7 +2185,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "c70cddc2-df7b-40ae-875e-fdfd6b3656b6",
                 "category_uuid": "5d5a3d23-d8c9-40ea-ad38-46788d740176"
               },
@@ -2259,7 +2193,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "6334be2e-bd9f-4675-a7fa-d5c1a91dfbb1",
                 "category_uuid": "2edec072-1671-4b63-8773-a0c192b9fead"
               }
@@ -2307,12 +2241,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "I consent to my story or tale being recorded, edited and kept by Zaydimayses and made\navailable to other Zaydimayse users.",
+              "text": "I consent to my story or tale being recorded, edited and kept by Zaydimayses and made\navailable to other Zaydimayse users.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "7879369d-c455-4201-bb52-4540e0ba0c87"
             }
           ],
@@ -2350,7 +2281,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "94d80022-764d-46a6-96fd-db2dc2798e1b",
@@ -2358,7 +2289,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "15d49346-3f17-4e85-81ee-a7f226e90ae9",
@@ -2368,7 +2299,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "36df0c18-5e58-4ef7-b6fc-a5bbde010dbd",
                 "category_uuid": "f4840ebd-03b5-40e2-b89c-565bfcfd7c33"
               },
@@ -2376,7 +2307,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "6b001dd4-6038-4802-a258-a2ff1bcd4792",
                 "category_uuid": "94f7c561-e1c2-4824-9239-e512d1b7642c"
               }
@@ -2424,12 +2355,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "I give consent to Zaydimayses conducting scholarly activities on the recorded story content.",
+              "text": "I give consent to Zaydimayses conducting scholarly activities on the recorded story content.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "cddb8c34-a1f4-431e-9c6d-3e05c740eeb7"
             }
           ],
@@ -2467,7 +2395,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "58c153cc-6e11-4115-81eb-62672cd0e4de",
@@ -2475,7 +2403,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "05244031-0a62-402a-a8e5-2adae1f4a730",
@@ -2485,7 +2413,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "61ffd8b8-48aa-40e3-8358-4223d04e048c",
                 "category_uuid": "f928cdb4-1f03-4563-955c-fb369a1b5d23"
               },
@@ -2493,7 +2421,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "238d4ba4-98e6-40c6-a2ee-ef37d394ab47",
                 "category_uuid": "25edd6b1-3d33-47ec-9264-302979f98ff6"
               }
@@ -2541,12 +2469,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "My recorded story is not subject to copyright.",
+              "text": "My recorded story is not subject to copyright.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "e5a054e7-e627-4a97-a6ba-5dde54869098"
             }
           ],
@@ -2584,7 +2509,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b5fc6891-593c-4251-83f1-af9ab75a99d0",
@@ -2592,7 +2517,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "508f58fe-7b45-4b32-b1c4-7fdfb26af1aa",
@@ -2602,7 +2527,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "5bfa9382-1931-4027-ad1f-a2706014bedb",
                 "category_uuid": "3521a3be-f174-4e7f-9682-f1b339344d18"
               },
@@ -2610,7 +2535,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "6fed3327-4e9b-47cd-b2ce-ffb9c5e4c846",
                 "category_uuid": "2c2a406c-7890-4a25-9890-d7a416f8fd04"
               }
@@ -2658,12 +2583,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "To the best of my knowledge, my recorded story does not contain elements that are\nagainst Halacha, or the law or in any way disturbing or offensive.",
+              "text": "To the best of my knowledge, my recorded story does not contain elements that are\nagainst Halacha, or the law or in any way disturbing or offensive.\n\nPlease select the number for the following options:\n1. Yes I agree \n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree ",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "d8ed05dc-a935-421c-be0d-41c9e77329f4"
             }
           ],
@@ -2701,7 +2623,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "3e616f37-3bfe-4e24-9511-358f72626bf4",
@@ -2709,7 +2631,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b8136f41-4b11-4fe7-9677-6e97818a2613",
@@ -2719,7 +2641,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "41e43b08-ad29-42db-b447-26f6dc242091",
                 "category_uuid": "4ec21141-4f60-40d7-a6a8-c448a392b61e"
               },
@@ -2727,7 +2649,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "b3730d4c-7548-4c94-ba0c-eac6eb17d49f",
                 "category_uuid": "ba10c2bb-e66b-4596-ae86-17a52f003e4d"
               }
@@ -2775,12 +2697,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "I give my consent to being contacted by Zaydimayses in the future.",
+              "text": "I give my consent to being contacted by Zaydimayses in the future.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "f8d11f91-f645-450f-81db-61517ee93466"
             }
           ],
@@ -2818,7 +2737,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "947efd8e-848f-4997-93dd-8dd4812addb8",
@@ -2826,7 +2745,7 @@
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "69356790-c987-4f31-9047-b30e23549363",
@@ -2836,7 +2755,7 @@
                 "arguments": [
                   "1"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "373b1f13-9b2a-4911-904f-7aff22bdf742",
                 "category_uuid": "a93b9e0f-9609-4c27-aeed-f301aea8c8fa"
               },
@@ -2844,7 +2763,7 @@
                 "arguments": [
                   "2"
                 ],
-                "type": "has_number_eq",
+                "type": "has_any_word",
                 "uuid": "9010463d-f52b-4b01-be89-6fb8ae6b0e4e",
                 "category_uuid": "b48a4d74-4e7b-42a8-be99-2d78037b5b19"
               }
@@ -3547,7 +3466,7 @@
         "stickies": {}
       },
       "revision": 302,
-      "expire_after_minutes": 10080,
+      "expire_after_minutes": 60,
       "localization": {}
     },
     {
@@ -3736,14 +3655,14 @@
             "type": "execute_actions"
           },
           "ed81fba3-1054-498a-a9e4-402f23ffe396": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 860,
               "top": 3340
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           },
           "66660b01-3e1b-4a32-a8f8-5290db8bfc98": {
             "position": {
@@ -3760,14 +3679,14 @@
             "type": "execute_actions"
           },
           "ca26ec83-f451-4c66-8bb2-51fe71c19c3b": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 840,
               "top": 3860
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           },
           "6420244e-5d20-4a49-b42d-1c8627612aba": {
             "position": {
@@ -3784,14 +3703,14 @@
             "type": "execute_actions"
           },
           "a374c6b1-aa47-4bf7-b6c2-05f07cafc4a9": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 860,
               "top": 4320
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           },
           "0676d9d4-cef3-4541-9dee-14c2274b4792": {
             "position": {
@@ -3808,14 +3727,14 @@
             "type": "execute_actions"
           },
           "34b05320-8555-45ec-afca-6eb994c3266e": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 820,
               "top": 4720
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           },
           "66554c93-f6ff-4d85-94f8-b81b23800720": {
             "position": {
@@ -3832,14 +3751,14 @@
             "type": "execute_actions"
           },
           "015180f8-4e36-4089-a91d-ca959f5709be": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 800,
               "top": 5200
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           },
           "c8a93680-1d8a-4599-8295-6fd0cd052f7a": {
             "position": {
@@ -3856,19 +3775,19 @@
             "type": "execute_actions"
           },
           "e5956922-8a30-4a6c-81c8-a3a986534f53": {
-            "type": "wait_for_response",
+            "config": {
+              "cases": {}
+            },
             "position": {
               "left": 780,
               "top": 5660
             },
-            "config": {
-              "cases": {}
-            }
+            "type": "wait_for_response"
           }
         },
         "stickies": {}
       },
-      "expire_after_minutes": 10080,
+      "expire_after_minutes": 60,
       "language": "eng",
       "localization": {},
       "name": "Test 2 - Grouped structure",
@@ -3877,11 +3796,8 @@
           "actions": [
             {
               "attachments": [],
-              "quick_replies": [
-                "Man",
-                "Woman"
-              ],
-              "text": "Are you a man or a woman?",
+              "quick_replies": [],
+              "text": "Are you a man or a woman?\n\nPlease select the number for the following options:\n1. Man\n2. Woman",
               "type": "send_msg",
               "uuid": "3f3c0edd-c996-4031-a1c6-d1d9cab0c222"
             }
@@ -3932,7 +3848,7 @@
             "cases": [
               {
                 "arguments": [
-                  "M Man Male"
+                  "M,Man,Male,1,"
                 ],
                 "category_uuid": "250a1c56-08c4-4cfd-a19d-2384b375de80",
                 "type": "has_any_word",
@@ -3940,7 +3856,7 @@
               },
               {
                 "arguments": [
-                  "F Woman W Female"
+                  "F,Woman,W,Female,2,"
                 ],
                 "category_uuid": "533b3e48-54b3-4d1e-8dbd-3c20ec7c23f1",
                 "type": "has_any_word",
@@ -3978,15 +3894,10 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Do you have :",
+              "text": "Do you have :\n\nPlease select the number for the following options:\n1. great-grand children\n2. grand children\n3. children\n4. none of the above",
               "type": "send_msg",
               "all_urns": false,
-              "quick_replies": [
-                "great-grand children",
-                "grand children",
-                "children",
-                "none of the above"
-              ],
+              "quick_replies": [],
               "uuid": "8f5e21c6-6aa2-4114-8f0e-c8f73ab5a5df"
             }
           ],
@@ -4025,7 +3936,7 @@
             "cases": [
               {
                 "arguments": [
-                  "great"
+                  "1"
                 ],
                 "type": "has_any_word",
                 "uuid": "85468f3d-d6d6-4bdc-afff-76800f4ec92f",
@@ -4033,34 +3944,26 @@
               },
               {
                 "arguments": [
-                  "grand children"
+                  "2"
                 ],
-                "type": "has_only_phrase",
+                "type": "has_any_word",
                 "uuid": "94ceb440-b470-4437-a950-c6a6472cda3e",
                 "category_uuid": "7d355128-0ccc-4311-9f64-073edddfa305"
               },
               {
                 "arguments": [
-                  "grandchildren"
+                  "3"
                 ],
-                "type": "has_only_phrase",
+                "type": "has_any_word",
                 "uuid": "378cb0c7-4808-49da-ae33-89c591928dd8",
-                "category_uuid": "7d355128-0ccc-4311-9f64-073edddfa305"
-              },
-              {
-                "arguments": [
-                  "children"
-                ],
-                "type": "has_only_phrase",
-                "uuid": "f09644ed-5d9d-4770-b3cd-8f52ee95d02e",
                 "category_uuid": "4a120926-2dc5-4ea5-9d0e-754aaa425651"
               },
               {
                 "arguments": [
-                  "none above"
+                  "4"
                 ],
                 "type": "has_any_word",
-                "uuid": "20faf084-88ca-41b5-b8b8-730501f36164",
+                "uuid": "f09644ed-5d9d-4770-b3cd-8f52ee95d02e",
                 "category_uuid": "1e8517ff-53c6-4348-9774-287a31b3f3c5"
               }
             ],
@@ -4258,12 +4161,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "How old were you when you learnt Yiddish?",
+              "text": "How old were you when you learnt Yiddish?\n\nPlease select the number for the following options:\n1. Child\n2. Adult",
               "type": "send_msg",
-              "quick_replies": [
-                "Child",
-                "Adult"
-              ],
+              "quick_replies": [],
               "uuid": "5529b1e0-67ce-46d3-8130-6ba14a5d2ec1"
             }
           ],
@@ -4302,7 +4202,7 @@
             "cases": [
               {
                 "arguments": [
-                  "Child"
+                  "Child,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "2608b2ed-a8eb-4f72-ac39-f1812387a794",
@@ -4310,10 +4210,26 @@
               },
               {
                 "arguments": [
-                  "Adult"
+                  "Adult,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f5f7ff05-5132-421f-b301-9243e357108a",
+                "category_uuid": "16c7cc4d-4e82-41a0-a4b2-8297cdccee6b"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "type": "has_any_word",
+                "uuid": "4f855c78-6180-4d58-9fc5-e82511298a9e",
+                "category_uuid": "0da9cadc-7449-45a6-8e45-6038463f71c6"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "type": "has_any_word",
+                "uuid": "454db869-62f5-4bb0-b02c-349984820f6f",
                 "category_uuid": "16c7cc4d-4e82-41a0-a4b2-8297cdccee6b"
               }
             ],
@@ -4359,13 +4275,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Where did you learn Yiddish? ",
+              "text": "Where did you learn Yiddish? \n\nPlease select the number for the following options:\n1. at home\n2. in cheder\n3. in yeshivah",
               "type": "send_msg",
-              "quick_replies": [
-                "at home",
-                "in cheder",
-                "in yeshivah"
-              ],
+              "quick_replies": [],
               "uuid": "f4d932d9-de24-4eb8-b7fe-f97527ec3f41"
             }
           ],
@@ -4404,7 +4316,31 @@
             "cases": [
               {
                 "arguments": [
-                  "home"
+                  "1"
+                ],
+                "type": "has_any_word",
+                "uuid": "7acd4977-2166-4ff2-801c-b7b7188f02d9",
+                "category_uuid": "88c355dd-583e-4ef0-83b1-96e729826ce9"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "type": "has_any_word",
+                "uuid": "189dd7a6-e9a2-48ab-ae30-49e0a930c60d",
+                "category_uuid": "9baf9cd4-7219-487b-a321-ffda033e71cc"
+              },
+              {
+                "arguments": [
+                  "3"
+                ],
+                "type": "has_any_word",
+                "uuid": "2f596d0a-f232-4334-b79d-1abbb8453ed5",
+                "category_uuid": "d400a82e-56b2-4258-bba1-5514a859cc59"
+              },
+              {
+                "arguments": [
+                  "home,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "3fe85b6e-fd2b-4440-9c37-20eee5b21a16",
@@ -4412,7 +4348,7 @@
               },
               {
                 "arguments": [
-                  "Cheder"
+                  "Cheder,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f9f19bc3-b72b-4bbc-b08a-3ddebde2dac2",
@@ -4420,7 +4356,7 @@
               },
               {
                 "arguments": [
-                  "Yeshivah"
+                  "Yeshivah,3,"
                 ],
                 "type": "has_any_word",
                 "uuid": "46149939-30c0-4416-8b19-2d650a6937b5",
@@ -4478,16 +4414,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Where do you currently live?",
+              "text": "Where do you currently live?\n\nPlease select the number for the following options:\n1. USA\n2. Israel\n3. Great Britain\n4. Canada\n5. Belgium\n6. Other",
               "type": "send_msg",
-              "quick_replies": [
-                "USA",
-                "Israel",
-                "Great Britain",
-                "Canada",
-                "Belgium",
-                "Other"
-              ],
+              "quick_replies": [],
               "uuid": "0e44e28c-5c9a-4477-af9c-ed677b3ced67"
             }
           ],
@@ -4526,7 +4455,7 @@
             "cases": [
               {
                 "arguments": [
-                  "USA"
+                  "USA,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "1accc2d9-a682-46f4-8d6e-fc59e6c38c7a",
@@ -4534,7 +4463,7 @@
               },
               {
                 "arguments": [
-                  "Israel"
+                  "Israel,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "565b776e-6e17-42a8-95dd-f3bb98cc20ea",
@@ -4550,7 +4479,7 @@
               },
               {
                 "arguments": [
-                  "Canada"
+                  "Canada,4,"
                 ],
                 "type": "has_any_word",
                 "uuid": "b5016cb9-6987-4ad3-ba07-42efa29b587b",
@@ -4558,7 +4487,7 @@
               },
               {
                 "arguments": [
-                  "Belgium"
+                  "Belgium,5,"
                 ],
                 "type": "has_any_word",
                 "uuid": "1610f121-4a3c-4c0b-a235-c9b07c9fe5e1",
@@ -4566,11 +4495,43 @@
               },
               {
                 "arguments": [
-                  "Other"
+                  "1"
                 ],
                 "type": "has_any_word",
-                "uuid": "3b326205-b1fb-45da-9cea-24122a81d233",
-                "category_uuid": "c419e284-9ea0-41d7-bd00-f4a3a130b906"
+                "uuid": "ca83055c-43f4-4b98-a76e-7f7d5058df07",
+                "category_uuid": "af19f59b-4f09-4ac1-bdcd-39f1ab70e252"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "type": "has_any_word",
+                "uuid": "26994475-3799-45cb-86da-f010b3f02c84",
+                "category_uuid": "c878be58-c2aa-4f2c-99ed-552860a4e2a7"
+              },
+              {
+                "arguments": [
+                  "3"
+                ],
+                "type": "has_any_word",
+                "uuid": "09aefba9-c802-4ba7-abe1-05c9376c0f58",
+                "category_uuid": "d0c00369-e853-4a2f-9b25-c67ac13493bc"
+              },
+              {
+                "arguments": [
+                  "4"
+                ],
+                "type": "has_any_word",
+                "uuid": "e5bc23ee-f4cc-49af-9e4d-9a135cd5b4e6",
+                "category_uuid": "ba286176-703a-4a25-8386-1623ea5ae4bf"
+              },
+              {
+                "arguments": [
+                  "5"
+                ],
+                "type": "has_any_word",
+                "uuid": "a4a42ee4-1dee-4a57-bfb5-93ff43b15e30",
+                "category_uuid": "cf799a38-a76d-474e-b9bd-2017a992ba8c"
               }
             ],
             "categories": [
@@ -4598,11 +4559,6 @@
                 "uuid": "cf799a38-a76d-474e-b9bd-2017a992ba8c",
                 "name": "Belgium",
                 "exit_uuid": "9820bfac-1a61-459b-a3c6-c09ec3a635ac"
-              },
-              {
-                "uuid": "c419e284-9ea0-41d7-bd00-f4a3a130b906",
-                "name": "OtherCountry",
-                "exit_uuid": "fa61a6d0-7df0-4e35-a51a-fd35e376afe4"
               },
               {
                 "exit_uuid": "09845b7d-42d1-4607-aef1-df027c246117",
@@ -4638,10 +4594,6 @@
               "destination_uuid": "f405a16e-31d1-4ce1-a3a4-302a3127df39"
             },
             {
-              "uuid": "fa61a6d0-7df0-4e35-a51a-fd35e376afe4",
-              "destination_uuid": "f405a16e-31d1-4ce1-a3a4-302a3127df39"
-            },
-            {
               "destination_uuid": "32dac4c8-8554-4185-878f-986c807e4419",
               "uuid": "09845b7d-42d1-4607-aef1-df027c246117"
             }
@@ -4651,16 +4603,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "Where did you live when you learnt Yiddish?",
+              "text": "Where did you live when you learnt Yiddish?\n\nPlease select the number for the following options:\n1. USA\n2. Israel\n3. Great Britain\n4. Canada \n5. Belgium\n6. Other",
               "type": "send_msg",
-              "quick_replies": [
-                "USA",
-                "Israel",
-                "Great Britain",
-                "Canada ",
-                "Belgium",
-                "Other"
-              ],
+              "quick_replies": [],
               "uuid": "6d39ec9d-88cc-4a8b-8919-0e46049b03af"
             }
           ],
@@ -4699,7 +4644,7 @@
             "cases": [
               {
                 "arguments": [
-                  "USA"
+                  "USA,1,"
                 ],
                 "type": "has_any_word",
                 "uuid": "010d61f2-1c28-4be0-9f15-b88b97a094b9",
@@ -4707,7 +4652,7 @@
               },
               {
                 "arguments": [
-                  "Israel"
+                  "Israel,2,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f4ee8fbd-a096-4f7f-a474-3a1be55e20cf",
@@ -4723,7 +4668,7 @@
               },
               {
                 "arguments": [
-                  "Canada"
+                  "Canada,4,"
                 ],
                 "type": "has_any_word",
                 "uuid": "655ff3a7-e002-4222-925a-5875ea3bb9da",
@@ -4731,7 +4676,7 @@
               },
               {
                 "arguments": [
-                  "Belgium"
+                  "Belgium,5,"
                 ],
                 "type": "has_any_word",
                 "uuid": "f7d66a2d-c982-4335-8efc-9c719f175f4e",
@@ -4739,10 +4684,58 @@
               },
               {
                 "arguments": [
-                  "Other"
+                  "Other,6,"
                 ],
                 "type": "has_any_word",
                 "uuid": "3c19f343-2870-4eb1-84ba-ce2598cd82b2",
+                "category_uuid": "1bf884f2-c702-4610-8188-7513eae3c609"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "type": "has_any_word",
+                "uuid": "df95d647-2b06-4b51-bada-24ba153542cc",
+                "category_uuid": "efe376d4-58e4-4b05-b586-8488350f8dfa"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "type": "has_any_word",
+                "uuid": "38fc5fa0-5022-4815-8f05-f81136ed70d3",
+                "category_uuid": "425c1655-502c-4193-9cbd-87acb2a961d0"
+              },
+              {
+                "arguments": [
+                  "3"
+                ],
+                "type": "has_any_word",
+                "uuid": "1b58c8f8-512b-4952-9a30-8ab54d99ecd2",
+                "category_uuid": "0a3fec04-56bf-4e91-8cf4-0fe01cabf83e"
+              },
+              {
+                "arguments": [
+                  "4"
+                ],
+                "type": "has_any_word",
+                "uuid": "d1763274-d1e5-4ce8-9e63-10e8c8220cc6",
+                "category_uuid": "176529bf-0953-4efd-b5c8-2a4226c333b3"
+              },
+              {
+                "arguments": [
+                  "5"
+                ],
+                "type": "has_any_word",
+                "uuid": "d36a8bee-aa7a-4cba-8ca6-f295e09a39a9",
+                "category_uuid": "c25cfdb0-51a8-4be2-8e1d-887987eb4f43"
+              },
+              {
+                "arguments": [
+                  "6"
+                ],
+                "type": "has_any_word",
+                "uuid": "065bca3b-fcf5-4c64-a76d-b742c8b36d9c",
                 "category_uuid": "1bf884f2-c702-4610-8188-7513eae3c609"
               }
             ],
@@ -4774,7 +4767,7 @@
               },
               {
                 "uuid": "1bf884f2-c702-4610-8188-7513eae3c609",
-                "name": "OtherCountry",
+                "name": "Other",
                 "exit_uuid": "424632bc-b3ac-4eb2-8df5-80bf1a5ec893"
               },
               {
@@ -4824,12 +4817,9 @@
           "actions": [
             {
               "attachments": [],
-              "text": "I consent to my personal information being kept by Zaydimayses.",
+              "text": "I consent to my personal information being kept by Zaydimayses.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "393c59ae-47e9-4788-8904-e5dc865f84cb"
             }
           ],
@@ -4860,27 +4850,54 @@
           "uuid": "4298b1fa-efdc-4b36-871d-4af14c7ebe7c"
         },
         {
-          "uuid": "ed81fba3-1054-498a-a9e4-402f23ffe396",
           "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "66660b01-3e1b-4a32-a8f8-5290db8bfc98",
+              "uuid": "e6a4b940-c3fc-4a40-b9d8-f48ff08ad1d9"
+            },
+            {
+              "destination_uuid": "66660b01-3e1b-4a32-a8f8-5290db8bfc98",
+              "uuid": "5c3c5c2f-d46c-4ec4-bb54-c19e7d94a792"
+            },
+            {
+              "destination_uuid": "4298b1fa-efdc-4b36-871d-4af14c7ebe7c",
+              "uuid": "97c544e7-8b76-4d9f-aee5-6171622c2d9a"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "a303e2df-302a-43e1-8958-3b38165cfe8a",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "30b9b7f5-e4cb-4b96-80ea-296823209cdd",
                 "type": "has_any_word",
-                "uuid": "8b5db8ff-6392-4e83-939a-79c2686e9cf9",
-                "category_uuid": "30b9b7f5-e4cb-4b96-80ea-296823209cdd"
+                "uuid": "8b5db8ff-6392-4e83-939a-79c2686e9cf9"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "68a6af21-3ab6-407e-b2a9-d8c1278bcf0f",
                 "type": "has_any_word",
-                "uuid": "c292b61a-f689-4ab3-8f03-f12169084503",
-                "category_uuid": "68a6af21-3ab6-407e-b2a9-d8c1278bcf0f"
+                "uuid": "c292b61a-f689-4ab3-8f03-f12169084503"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "30b9b7f5-e4cb-4b96-80ea-296823209cdd",
+                "type": "has_any_word",
+                "uuid": "20c3a1d0-90d5-41d6-8a65-f3d518519fa6"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "68a6af21-3ab6-407e-b2a9-d8c1278bcf0f",
+                "type": "has_any_word",
+                "uuid": "96974368-978a-4263-867b-3cf42b1dfae8"
               }
             ],
             "categories": [
@@ -4900,37 +4917,23 @@
                 "uuid": "a303e2df-302a-43e1-8958-3b38165cfe8a"
               }
             ],
+            "default_category_uuid": "a303e2df-302a-43e1-8958-3b38165cfe8a",
             "operand": "@input.text",
+            "result_name": "Consent1",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "Consent1"
-          },
-          "exits": [
-            {
-              "destination_uuid": "66660b01-3e1b-4a32-a8f8-5290db8bfc98",
-              "uuid": "e6a4b940-c3fc-4a40-b9d8-f48ff08ad1d9"
-            },
-            {
-              "destination_uuid": "66660b01-3e1b-4a32-a8f8-5290db8bfc98",
-              "uuid": "5c3c5c2f-d46c-4ec4-bb54-c19e7d94a792"
-            },
-            {
-              "destination_uuid": "4298b1fa-efdc-4b36-871d-4af14c7ebe7c",
-              "uuid": "97c544e7-8b76-4d9f-aee5-6171622c2d9a"
             }
-          ]
+          },
+          "uuid": "ed81fba3-1054-498a-a9e4-402f23ffe396"
         },
         {
           "actions": [
             {
               "attachments": [],
-              "text": "I consent to my story or tale being recorded, edited and kept by Zaydimayses and made available to other Zaydimayse users.",
+              "text": "I consent to my story or tale being recorded, edited and kept by Zaydimayses and made\navailable to other Zaydimayse users.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "d0705d51-78de-44ef-83fe-1f8ee7fb1197"
             }
           ],
@@ -4961,27 +4964,54 @@
           "uuid": "2ec87225-6bef-49e9-81cd-40aa33f29556"
         },
         {
-          "uuid": "ca26ec83-f451-4c66-8bb2-51fe71c19c3b",
           "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "6420244e-5d20-4a49-b42d-1c8627612aba",
+              "uuid": "b5be557c-84c1-4ee6-a019-0073699c4590"
+            },
+            {
+              "destination_uuid": "6420244e-5d20-4a49-b42d-1c8627612aba",
+              "uuid": "058c815d-a46f-4d90-b570-8ad7a7d966fd"
+            },
+            {
+              "destination_uuid": "2ec87225-6bef-49e9-81cd-40aa33f29556",
+              "uuid": "ba3ee37c-3a20-43a3-9b86-b62f34a5b6ec"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "358b5de5-9834-4c5a-9b27-ebbfbc7a1bfd",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "21f83e51-4f80-4d9c-8d64-2006460a9bfe",
                 "type": "has_any_word",
-                "uuid": "b7841ffe-baf5-464b-be8e-842dd0b615c9",
-                "category_uuid": "21f83e51-4f80-4d9c-8d64-2006460a9bfe"
+                "uuid": "b7841ffe-baf5-464b-be8e-842dd0b615c9"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "5093083a-bfe7-42c4-b1c6-357b5b0fa117",
                 "type": "has_any_word",
-                "uuid": "73c32b40-3401-4814-aea1-4447ea1397d2",
-                "category_uuid": "5093083a-bfe7-42c4-b1c6-357b5b0fa117"
+                "uuid": "73c32b40-3401-4814-aea1-4447ea1397d2"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "21f83e51-4f80-4d9c-8d64-2006460a9bfe",
+                "type": "has_any_word",
+                "uuid": "36d62826-1611-450f-8eea-08199dfaaa05"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "5093083a-bfe7-42c4-b1c6-357b5b0fa117",
+                "type": "has_any_word",
+                "uuid": "2cb5cd7d-2c58-4e75-a405-512b9d4fa3fa"
               }
             ],
             "categories": [
@@ -5001,37 +5031,23 @@
                 "uuid": "358b5de5-9834-4c5a-9b27-ebbfbc7a1bfd"
               }
             ],
+            "default_category_uuid": "358b5de5-9834-4c5a-9b27-ebbfbc7a1bfd",
             "operand": "@input.text",
+            "result_name": "Consent2",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "Consent2"
-          },
-          "exits": [
-            {
-              "destination_uuid": "6420244e-5d20-4a49-b42d-1c8627612aba",
-              "uuid": "b5be557c-84c1-4ee6-a019-0073699c4590"
-            },
-            {
-              "destination_uuid": "6420244e-5d20-4a49-b42d-1c8627612aba",
-              "uuid": "058c815d-a46f-4d90-b570-8ad7a7d966fd"
-            },
-            {
-              "destination_uuid": "2ec87225-6bef-49e9-81cd-40aa33f29556",
-              "uuid": "ba3ee37c-3a20-43a3-9b86-b62f34a5b6ec"
             }
-          ]
+          },
+          "uuid": "ca26ec83-f451-4c66-8bb2-51fe71c19c3b"
         },
         {
           "actions": [
             {
               "attachments": [],
-              "text": "I give consent to Zaydimayses conducting scholarly activities on the recorded story content.",
+              "text": "I give consent to Zaydimayses conducting scholarly activities on the recorded story content.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "42c92462-169b-4719-a597-613ef1376338"
             }
           ],
@@ -5062,27 +5078,54 @@
           "uuid": "fc0c9ba7-3e3d-48bb-b1cc-0e063d69642c"
         },
         {
-          "uuid": "a374c6b1-aa47-4bf7-b6c2-05f07cafc4a9",
           "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "0676d9d4-cef3-4541-9dee-14c2274b4792",
+              "uuid": "a582a824-f0d6-427a-8437-256437272fff"
+            },
+            {
+              "destination_uuid": "0676d9d4-cef3-4541-9dee-14c2274b4792",
+              "uuid": "5c6e2da7-7e40-4c8e-854c-31a58e0ffd2d"
+            },
+            {
+              "destination_uuid": "fc0c9ba7-3e3d-48bb-b1cc-0e063d69642c",
+              "uuid": "9bd19bf5-5fe3-4180-81f2-aeb3466e70c9"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "5c10ad1a-2cbc-45c7-a462-1993cecf5d36",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "4f72615a-4dc1-4a2c-abce-29c8c2dcfa03",
                 "type": "has_any_word",
-                "uuid": "c0bbd07d-e2af-4e14-b9c9-3662191da67c",
-                "category_uuid": "4f72615a-4dc1-4a2c-abce-29c8c2dcfa03"
+                "uuid": "c0bbd07d-e2af-4e14-b9c9-3662191da67c"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "9d79f564-dc24-4596-9b75-8c29d18587cb",
                 "type": "has_any_word",
-                "uuid": "152df8a3-edec-45f2-99a0-11efd60e4539",
-                "category_uuid": "9d79f564-dc24-4596-9b75-8c29d18587cb"
+                "uuid": "152df8a3-edec-45f2-99a0-11efd60e4539"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "4f72615a-4dc1-4a2c-abce-29c8c2dcfa03",
+                "type": "has_any_word",
+                "uuid": "415c91c5-971b-4854-a8ac-2ffb7de88590"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "9d79f564-dc24-4596-9b75-8c29d18587cb",
+                "type": "has_any_word",
+                "uuid": "545d798d-397e-4e0c-9ac8-75f9e4ffb1d6"
               }
             ],
             "categories": [
@@ -5102,37 +5145,23 @@
                 "uuid": "5c10ad1a-2cbc-45c7-a462-1993cecf5d36"
               }
             ],
+            "default_category_uuid": "5c10ad1a-2cbc-45c7-a462-1993cecf5d36",
             "operand": "@input.text",
+            "result_name": "Consent3",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "Consent3"
-          },
-          "exits": [
-            {
-              "destination_uuid": "0676d9d4-cef3-4541-9dee-14c2274b4792",
-              "uuid": "a582a824-f0d6-427a-8437-256437272fff"
-            },
-            {
-              "destination_uuid": "0676d9d4-cef3-4541-9dee-14c2274b4792",
-              "uuid": "5c6e2da7-7e40-4c8e-854c-31a58e0ffd2d"
-            },
-            {
-              "destination_uuid": "fc0c9ba7-3e3d-48bb-b1cc-0e063d69642c",
-              "uuid": "9bd19bf5-5fe3-4180-81f2-aeb3466e70c9"
             }
-          ]
+          },
+          "uuid": "a374c6b1-aa47-4bf7-b6c2-05f07cafc4a9"
         },
         {
           "actions": [
             {
               "attachments": [],
-              "text": "My recorded story is not subject to copyright.",
+              "text": "My recorded story is not subject to copyright.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "b70ea588-c4e7-4905-9a09-000b88e36700"
             }
           ],
@@ -5163,27 +5192,54 @@
           "uuid": "ec09715e-af12-4b19-8299-03c623b2b8d9"
         },
         {
-          "uuid": "34b05320-8555-45ec-afca-6eb994c3266e",
           "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "66554c93-f6ff-4d85-94f8-b81b23800720",
+              "uuid": "aa75333f-55b6-4ead-8cdc-45b1bafc91f0"
+            },
+            {
+              "destination_uuid": "66554c93-f6ff-4d85-94f8-b81b23800720",
+              "uuid": "73b41280-405d-4e64-a560-c34d66b5b9b3"
+            },
+            {
+              "destination_uuid": "ec09715e-af12-4b19-8299-03c623b2b8d9",
+              "uuid": "6f7468ec-5c7a-41c0-a30a-54d4f506ac39"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "383d9fa8-60d5-4bea-9604-e74029b34444",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "b9b47792-617e-4c9c-bd5c-547ec8602b98",
                 "type": "has_any_word",
-                "uuid": "8e79e9d8-b82b-42ee-b35d-2cf64e6e6093",
-                "category_uuid": "b9b47792-617e-4c9c-bd5c-547ec8602b98"
+                "uuid": "8e79e9d8-b82b-42ee-b35d-2cf64e6e6093"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "92ac235b-43ca-4bee-afb5-9e292e27ecdc",
                 "type": "has_any_word",
-                "uuid": "11ff455c-2d41-449e-8715-8dc859b539c2",
-                "category_uuid": "92ac235b-43ca-4bee-afb5-9e292e27ecdc"
+                "uuid": "11ff455c-2d41-449e-8715-8dc859b539c2"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "b9b47792-617e-4c9c-bd5c-547ec8602b98",
+                "type": "has_any_word",
+                "uuid": "bb785434-c31d-4139-9c22-d2792dcf8266"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "92ac235b-43ca-4bee-afb5-9e292e27ecdc",
+                "type": "has_any_word",
+                "uuid": "c22a4e49-f7f6-4f5c-aeca-988ac6036537"
               }
             ],
             "categories": [
@@ -5203,37 +5259,23 @@
                 "uuid": "383d9fa8-60d5-4bea-9604-e74029b34444"
               }
             ],
+            "default_category_uuid": "383d9fa8-60d5-4bea-9604-e74029b34444",
             "operand": "@input.text",
+            "result_name": "Copyright",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "Copyright"
-          },
-          "exits": [
-            {
-              "destination_uuid": "66554c93-f6ff-4d85-94f8-b81b23800720",
-              "uuid": "aa75333f-55b6-4ead-8cdc-45b1bafc91f0"
-            },
-            {
-              "destination_uuid": "66554c93-f6ff-4d85-94f8-b81b23800720",
-              "uuid": "73b41280-405d-4e64-a560-c34d66b5b9b3"
-            },
-            {
-              "destination_uuid": "ec09715e-af12-4b19-8299-03c623b2b8d9",
-              "uuid": "6f7468ec-5c7a-41c0-a30a-54d4f506ac39"
             }
-          ]
+          },
+          "uuid": "34b05320-8555-45ec-afca-6eb994c3266e"
         },
         {
           "actions": [
             {
               "attachments": [],
-              "text": "To the best of my knowledge, my recorded story does not contain elements that are against Halacha, or the law or in any way disturbing or offensive.",
+              "text": "To the best of my knowledge, my recorded story does not contain elements that are\nagainst Halacha, or the law or in any way disturbing or offensive.\n\nPlease select the number for the following options:\n1. Yes I agree \n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree ",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "cd5f5a72-4cca-4d33-b7f6-5da06001e13c"
             }
           ],
@@ -5264,27 +5306,54 @@
           "uuid": "ab00c33c-926c-4163-8339-fba56b34f1be"
         },
         {
-          "uuid": "015180f8-4e36-4089-a91d-ca959f5709be",
           "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "c8a93680-1d8a-4599-8295-6fd0cd052f7a",
+              "uuid": "35f9803a-4534-4198-82cf-c00919a374bb"
+            },
+            {
+              "destination_uuid": "c8a93680-1d8a-4599-8295-6fd0cd052f7a",
+              "uuid": "d1017da5-afdf-454e-8099-603b1c8a0a09"
+            },
+            {
+              "destination_uuid": "ab00c33c-926c-4163-8339-fba56b34f1be",
+              "uuid": "a7b7c659-0534-49eb-8eb7-8d10fd1fdaf5"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "19491a8f-a667-40c8-9038-57b262adb2d9",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "c3051810-544c-4fff-8703-e5792b3b22c3",
                 "type": "has_any_word",
-                "uuid": "d3d1d431-7005-4aad-9b5e-f30fcdbdbfec",
-                "category_uuid": "c3051810-544c-4fff-8703-e5792b3b22c3"
+                "uuid": "d3d1d431-7005-4aad-9b5e-f30fcdbdbfec"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "bc583fa3-2c9e-4fc6-b9b6-22c5306da5d5",
                 "type": "has_any_word",
-                "uuid": "b86a5c9f-f125-4454-ab9b-02e56ec8f4f6",
-                "category_uuid": "bc583fa3-2c9e-4fc6-b9b6-22c5306da5d5"
+                "uuid": "b86a5c9f-f125-4454-ab9b-02e56ec8f4f6"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "c3051810-544c-4fff-8703-e5792b3b22c3",
+                "type": "has_any_word",
+                "uuid": "44b4a059-d7cc-46e6-bd81-f0afd524bbee"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "bc583fa3-2c9e-4fc6-b9b6-22c5306da5d5",
+                "type": "has_any_word",
+                "uuid": "72dc0156-518f-4e54-a64d-1dfa413bb437"
               }
             ],
             "categories": [
@@ -5304,37 +5373,23 @@
                 "uuid": "19491a8f-a667-40c8-9038-57b262adb2d9"
               }
             ],
+            "default_category_uuid": "19491a8f-a667-40c8-9038-57b262adb2d9",
             "operand": "@input.text",
+            "result_name": "AppropriateContent",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "AppropriateContent"
-          },
-          "exits": [
-            {
-              "destination_uuid": "c8a93680-1d8a-4599-8295-6fd0cd052f7a",
-              "uuid": "35f9803a-4534-4198-82cf-c00919a374bb"
-            },
-            {
-              "destination_uuid": "c8a93680-1d8a-4599-8295-6fd0cd052f7a",
-              "uuid": "d1017da5-afdf-454e-8099-603b1c8a0a09"
-            },
-            {
-              "destination_uuid": "ab00c33c-926c-4163-8339-fba56b34f1be",
-              "uuid": "a7b7c659-0534-49eb-8eb7-8d10fd1fdaf5"
             }
-          ]
+          },
+          "uuid": "015180f8-4e36-4089-a91d-ca959f5709be"
         },
         {
           "actions": [
             {
               "attachments": [],
-              "text": "I give my consent to being contacted by Zaydimayses in the future.",
+              "text": "I give my consent to being contacted by Zaydimayses in the future.\n\nPlease select the number for the following options:\n1. Yes I agree\n2. No I do not agree",
               "type": "send_msg",
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
+              "quick_replies": [],
               "uuid": "895a76c6-f949-4bcb-b091-3221c5c7b682"
             }
           ],
@@ -5365,27 +5420,52 @@
           ]
         },
         {
-          "uuid": "e5956922-8a30-4a6c-81c8-a3a986534f53",
           "actions": [],
+          "exits": [
+            {
+              "uuid": "fa17579c-9dbb-40bf-a88c-ec704e677fad"
+            },
+            {
+              "uuid": "2d4918ec-9328-420a-8317-b6b79e03f76a"
+            },
+            {
+              "destination_uuid": "a4a9e592-ab0e-4aa7-8cce-47b83b4bbd8c",
+              "uuid": "d54b1ca0-4d36-4763-a26f-bbdce1059ff1"
+            }
+          ],
           "router": {
-            "type": "switch",
-            "default_category_uuid": "c977b17c-51d5-4cc0-aed5-949ae2bb916d",
             "cases": [
               {
                 "arguments": [
-                  "Y Yes"
+                  "Y,Yes,1,"
                 ],
+                "category_uuid": "c344061a-20dc-4146-a73b-09000659dad0",
                 "type": "has_any_word",
-                "uuid": "2fb92cc0-8a8f-4d2d-a1da-6aedaf1fc04e",
-                "category_uuid": "c344061a-20dc-4146-a73b-09000659dad0"
+                "uuid": "2fb92cc0-8a8f-4d2d-a1da-6aedaf1fc04e"
               },
               {
                 "arguments": [
-                  "N No"
+                  "N,No,2,"
                 ],
+                "category_uuid": "7c701a93-8c20-4486-9043-1ee90b4066ed",
                 "type": "has_any_word",
-                "uuid": "4d635cea-9841-4c1a-b2d7-24477ba77cbd",
-                "category_uuid": "7c701a93-8c20-4486-9043-1ee90b4066ed"
+                "uuid": "4d635cea-9841-4c1a-b2d7-24477ba77cbd"
+              },
+              {
+                "arguments": [
+                  "1"
+                ],
+                "category_uuid": "c344061a-20dc-4146-a73b-09000659dad0",
+                "type": "has_any_word",
+                "uuid": "33ad196a-9adb-4788-b0db-73dc4d38706a"
+              },
+              {
+                "arguments": [
+                  "2"
+                ],
+                "category_uuid": "7c701a93-8c20-4486-9043-1ee90b4066ed",
+                "type": "has_any_word",
+                "uuid": "a7b62617-3da7-4f5a-b10f-c042ce6ec0f6"
               }
             ],
             "categories": [
@@ -5405,1472 +5485,25 @@
                 "uuid": "c977b17c-51d5-4cc0-aed5-949ae2bb916d"
               }
             ],
+            "default_category_uuid": "c977b17c-51d5-4cc0-aed5-949ae2bb916d",
             "operand": "@input.text",
+            "result_name": "ConsentToContact",
+            "type": "switch",
             "wait": {
               "type": "msg"
-            },
-            "result_name": "ConsentToContact"
-          },
-          "exits": [
-            {
-              "uuid": "fa17579c-9dbb-40bf-a88c-ec704e677fad",
-              "destination_uuid": null
-            },
-            {
-              "uuid": "2d4918ec-9328-420a-8317-b6b79e03f76a"
-            },
-            {
-              "destination_uuid": "a4a9e592-ab0e-4aa7-8cce-47b83b4bbd8c",
-              "uuid": "d54b1ca0-4d36-4763-a26f-bbdce1059ff1"
             }
-          ]
+          },
+          "uuid": "e5956922-8a30-4a6c-81c8-a3a986534f53"
         }
       ],
       "spec_version": "13.1.0",
       "type": "messaging",
       "uuid": "6a8f10b9-c372-4279-bb5e-cbe4905950e4",
-      "revision": 274
-    },
-    {
-      "_ui": {
-        "nodes": {
-          "f7ba965d-fda3-409a-ae58-19e5a0146501": {
-            "position": {
-              "left": 540,
-              "top": 0
-            },
-            "type": "execute_actions"
-          },
-          "8a4f09c1-226c-4924-a849-78c2edcb54ab": {
-            "position": {
-              "left": 860,
-              "top": 100
-            },
-            "type": "execute_actions"
-          },
-          "c030e18e-4037-4f2a-a9a2-e67e7565fd33": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 520,
-              "top": 180
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "4850285a-6daf-43bb-93fa-a8473c996050": {
-            "position": {
-              "left": 500,
-              "top": 380
-            },
-            "type": "execute_actions"
-          },
-          "7bec0fec-4c52-47a1-825d-fcacb4b5e05f": {
-            "position": {
-              "left": 1020,
-              "top": 500
-            },
-            "type": "execute_actions"
-          },
-          "c556390b-034a-4b08-b2f4-208ad6e60009": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 420,
-              "top": 600
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "f3f587bf-d613-4468-870c-f348c8c1f8ea": {
-            "position": {
-              "left": 920,
-              "top": 840
-            },
-            "type": "execute_actions"
-          },
-          "7a4853f4-63cb-41fe-a814-b8aa4d369325": {
-            "position": {
-              "left": 1260,
-              "top": 920
-            },
-            "type": "execute_actions"
-          },
-          "4ba577ee-3123-4956-9609-e4c2c1792294": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 880,
-              "top": 960
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "8dec203f-7880-4a5e-b589-255749d81b17": {
-            "position": {
-              "left": 700,
-              "top": 1220
-            },
-            "type": "execute_actions"
-          },
-          "f7626584-3a44-4511-ad7c-451c4ab0f8f4": {
-            "position": {
-              "left": 1060,
-              "top": 1360
-            },
-            "type": "execute_actions"
-          },
-          "9b6d674a-66bc-4af5-8792-4edfae06d339": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 720,
-              "top": 1380
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "739e07a7-d83c-4e2a-9b49-424a954619aa": {
-            "position": {
-              "left": 580,
-              "top": 1560
-            },
-            "type": "execute_actions"
-          },
-          "a31b7182-f878-4812-93e9-1f0ca844bc08": {
-            "position": {
-              "left": 900,
-              "top": 1680
-            },
-            "type": "execute_actions"
-          },
-          "34ca0ef1-536f-4db0-bb2f-c9b03450a73e": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 540,
-              "top": 1780
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "1fa62354-2286-4663-bc20-e0370943ac81": {
-            "position": {
-              "left": 800,
-              "top": 2000
-            },
-            "type": "execute_actions"
-          },
-          "18cf7642-1207-457d-bde1-5a952fd14fb8": {
-            "position": {
-              "left": 1260,
-              "top": 2080
-            },
-            "type": "execute_actions"
-          },
-          "e92e3bf3-b9fc-4718-80c7-dec711dd3440": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 760,
-              "top": 2180
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "5620a342-b7ef-4577-85f3-be31d73ae897": {
-            "position": {
-              "left": 880,
-              "top": 2580
-            },
-            "type": "execute_actions"
-          },
-          "2f0bf102-a838-4b56-b897-75e6791456b1": {
-            "position": {
-              "left": 1260,
-              "top": 2660
-            },
-            "type": "execute_actions"
-          },
-          "0575a64c-6e23-4671-8b3c-79c0b5074d8b": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 780,
-              "top": 2820
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "be677285-b627-4055-9ec0-9b8217741746": {
-            "position": {
-              "left": 880,
-              "top": 3160
-            },
-            "type": "execute_actions"
-          },
-          "ad7676ff-2ab2-42c6-a230-f6f6a85fea20": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 820,
-              "top": 3840
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "1a60d61c-6ce6-4690-9cc4-57a4e4455e49": {
-            "position": {
-              "left": 1160,
-              "top": 3960
-            },
-            "type": "execute_actions"
-          },
-          "db91a050-9999-4b6f-bd9a-1dd3b30f0f0b": {
-            "position": {
-              "left": 1080,
-              "top": 4140
-            },
-            "type": "execute_actions"
-          },
-          "e17dfe40-975d-409b-9936-9664eee64285": {
-            "position": {
-              "left": 780,
-              "top": 4200
-            },
-            "type": "execute_actions"
-          },
-          "e2dfb0d2-5172-4b1b-9804-02c398c02ad9": {
-            "type": "wait_for_response",
-            "position": {
-              "left": 720,
-              "top": 4460
-            },
-            "config": {
-              "cases": {}
-            }
-          },
-          "f1aa725f-a6fe-4f7c-957e-51c1875f7ff3": {
-            "position": {
-              "left": 1060,
-              "top": 4380
-            },
-            "type": "execute_actions"
-          }
-        },
-        "stickies": {}
-      },
-      "expire_after_minutes": 10080,
-      "language": "eng",
-      "localization": {},
-      "name": "Test 3 - Grouped consent",
-      "nodes": [
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "Man",
-                "Woman"
-              ],
-              "text": "Are you a man or a woman?",
-              "type": "send_msg",
-              "uuid": "717abd59-50d5-4def-a236-6f50ae3611e3"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "c030e18e-4037-4f2a-a9a2-e67e7565fd33",
-              "uuid": "874b472e-65f7-4c19-acb0-50c15b53f3f0"
-            }
-          ],
-          "uuid": "f7ba965d-fda3-409a-ae58-19e5a0146501"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "1136fe87-d0f0-44ee-a7a0-f8e76d8aba02"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "f7ba965d-fda3-409a-ae58-19e5a0146501",
-              "uuid": "3d29cda7-fede-45eb-8c4c-10d7f29ccbc2"
-            }
-          ],
-          "uuid": "8a4f09c1-226c-4924-a849-78c2edcb54ab"
-        },
-        {
-          "uuid": "c030e18e-4037-4f2a-a9a2-e67e7565fd33",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "6dcf1510-43dc-495c-a33f-6a66acbabfe7",
-            "cases": [
-              {
-                "arguments": [
-                  "M Man Male"
-                ],
-                "type": "has_any_word",
-                "uuid": "6ee726ff-59b6-4439-bb80-51de507e28c6",
-                "category_uuid": "64d1d76e-db8f-4cb8-86ad-55b560aa4aa9"
-              },
-              {
-                "arguments": [
-                  "F Woman W Female"
-                ],
-                "type": "has_any_word",
-                "uuid": "c601f6f8-c30f-4851-9cfd-fd70bf3d08c1",
-                "category_uuid": "93f54bf3-5ab2-4dc2-a0f4-b9b8f3ed9e02"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "46c5007b-c4d2-45f3-a222-b1e7c79ee489",
-                "name": "M",
-                "uuid": "64d1d76e-db8f-4cb8-86ad-55b560aa4aa9"
-              },
-              {
-                "exit_uuid": "405e3800-230e-4e51-8368-e2d9a4d51cb6",
-                "name": "F",
-                "uuid": "93f54bf3-5ab2-4dc2-a0f4-b9b8f3ed9e02"
-              },
-              {
-                "exit_uuid": "faef6bef-76fc-4db6-b0a5-39f6c8673e37",
-                "name": "Other",
-                "uuid": "6dcf1510-43dc-495c-a33f-6a66acbabfe7"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "Sex"
-          },
-          "exits": [
-            {
-              "destination_uuid": "4850285a-6daf-43bb-93fa-a8473c996050",
-              "uuid": "46c5007b-c4d2-45f3-a222-b1e7c79ee489"
-            },
-            {
-              "destination_uuid": "4850285a-6daf-43bb-93fa-a8473c996050",
-              "uuid": "405e3800-230e-4e51-8368-e2d9a4d51cb6"
-            },
-            {
-              "destination_uuid": "8a4f09c1-226c-4924-a849-78c2edcb54ab",
-              "uuid": "faef6bef-76fc-4db6-b0a5-39f6c8673e37"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "all_urns": false,
-              "attachments": [],
-              "quick_replies": [
-                "great-grand children",
-                "grand children",
-                "children",
-                "none of the above"
-              ],
-              "text": "Do you have :",
-              "type": "send_msg",
-              "uuid": "5d996953-576b-4512-b853-80a22777ba6e"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "c556390b-034a-4b08-b2f4-208ad6e60009",
-              "uuid": "38afc15d-c3d9-4644-9491-6eecfc65d7b7"
-            }
-          ],
-          "uuid": "4850285a-6daf-43bb-93fa-a8473c996050"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "89141272-5bae-4719-a0a9-62ade96863a6"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "4850285a-6daf-43bb-93fa-a8473c996050",
-              "uuid": "afc32dd6-0f76-459a-ada3-e428f88b46c1"
-            }
-          ],
-          "uuid": "7bec0fec-4c52-47a1-825d-fcacb4b5e05f"
-        },
-        {
-          "uuid": "c556390b-034a-4b08-b2f4-208ad6e60009",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "15a65c56-440d-49ac-a401-776f804f5cd3",
-            "cases": [
-              {
-                "arguments": [
-                  "great"
-                ],
-                "type": "has_only_phrase",
-                "uuid": "ff6faf2f-f3ee-45d6-ba24-39c2a1e47acd",
-                "category_uuid": "750a289f-97be-43f5-9343-4c406a8c1941"
-              },
-              {
-                "arguments": [
-                  "grand children"
-                ],
-                "type": "has_only_phrase",
-                "uuid": "2d67c053-1fae-46c0-a9ae-bd40fbcfa8a7",
-                "category_uuid": "337adc25-9a64-45bb-966e-19925e2a5c7a"
-              },
-              {
-                "arguments": [
-                  "grandchildren"
-                ],
-                "type": "has_only_phrase",
-                "uuid": "25f1fad9-97be-4852-a6fa-2307d2dc31d0",
-                "category_uuid": "337adc25-9a64-45bb-966e-19925e2a5c7a"
-              },
-              {
-                "arguments": [
-                  "children"
-                ],
-                "type": "has_only_phrase",
-                "uuid": "b6a282bb-66eb-4309-9fa4-b583af5724bb",
-                "category_uuid": "0dfcd76e-fb62-4072-8196-3f3b60a0a9d4"
-              },
-              {
-                "arguments": [
-                  "none above"
-                ],
-                "type": "has_any_word",
-                "uuid": "7b0611e3-60ce-4b7e-ba68-1e05e12d4e6e",
-                "category_uuid": "29a3650c-4dcd-453e-ae83-dabc535b61c3"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "af5a5a34-b620-4cc4-928e-ae4c704a0a30",
-                "name": "Great-grandchildren",
-                "uuid": "750a289f-97be-43f5-9343-4c406a8c1941"
-              },
-              {
-                "exit_uuid": "c5f4aceb-6794-45aa-b466-d1c62110ab4b",
-                "name": "Grandchildren",
-                "uuid": "337adc25-9a64-45bb-966e-19925e2a5c7a"
-              },
-              {
-                "exit_uuid": "f263c56c-64de-4d12-a21d-4cc1641d2b68",
-                "name": "Children",
-                "uuid": "0dfcd76e-fb62-4072-8196-3f3b60a0a9d4"
-              },
-              {
-                "exit_uuid": "2ec237ae-cd67-4524-9f2a-aab902488ed3",
-                "name": "None",
-                "uuid": "29a3650c-4dcd-453e-ae83-dabc535b61c3"
-              },
-              {
-                "exit_uuid": "9c3fe25d-2167-4cfa-8b49-7e630716b861",
-                "name": "Other",
-                "uuid": "15a65c56-440d-49ac-a401-776f804f5cd3"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "Children"
-          },
-          "exits": [
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "af5a5a34-b620-4cc4-928e-ae4c704a0a30"
-            },
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "c5f4aceb-6794-45aa-b466-d1c62110ab4b"
-            },
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "f263c56c-64de-4d12-a21d-4cc1641d2b68"
-            },
-            {
-              "destination_uuid": "f3f587bf-d613-4468-870c-f348c8c1f8ea",
-              "uuid": "2ec237ae-cd67-4524-9f2a-aab902488ed3"
-            },
-            {
-              "destination_uuid": "7bec0fec-4c52-47a1-825d-fcacb4b5e05f",
-              "uuid": "9c3fe25d-2167-4cfa-8b49-7e630716b861"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "How old are you?",
-              "type": "send_msg",
-              "uuid": "95afca67-3556-4b5e-837d-206339d33720"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "4ba577ee-3123-4956-9609-e4c2c1792294",
-              "uuid": "4db0458c-972d-4425-a312-26033c3ba94f"
-            }
-          ],
-          "uuid": "f3f587bf-d613-4468-870c-f348c8c1f8ea"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please type a number, for example '68'.",
-              "type": "send_msg",
-              "uuid": "ecc3f78b-67cd-4561-9f20-418d3646e8a5"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "f3f587bf-d613-4468-870c-f348c8c1f8ea",
-              "uuid": "aca7061e-e190-4809-ab70-e3741f45f15b"
-            }
-          ],
-          "uuid": "7a4853f4-63cb-41fe-a814-b8aa4d369325"
-        },
-        {
-          "uuid": "4ba577ee-3123-4956-9609-e4c2c1792294",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "1fb1aa68-76b9-43c9-b21c-f7b9e1f144fb",
-            "cases": [
-              {
-                "arguments": [
-                  "70"
-                ],
-                "type": "has_number_gte",
-                "uuid": "5c8d9650-b824-460d-9598-ee295eb38673",
-                "category_uuid": "b39b09b5-22d3-41bc-a3f5-ae79648f9e46"
-              },
-              {
-                "arguments": [
-                  "50",
-                  "69"
-                ],
-                "type": "has_number_between",
-                "uuid": "7e8ad745-62ab-4483-b87d-ebb1f6ff4527",
-                "category_uuid": "fc48b01a-f967-4d5d-9db5-8181227ac683"
-              },
-              {
-                "arguments": [
-                  "30",
-                  "49"
-                ],
-                "type": "has_number_between",
-                "uuid": "11a2390f-34fa-4b07-8411-9e22d7b1bc26",
-                "category_uuid": "fc419941-7fc9-4992-bb10-5b657fc8c74e"
-              },
-              {
-                "arguments": [
-                  "29"
-                ],
-                "type": "has_number_lte",
-                "uuid": "9ed296dc-bc70-4c81-8cd8-1cddb6a90b2e",
-                "category_uuid": "765da0c5-01cd-4ce4-85d5-997b1dbe347d"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "d48472a3-6f52-461a-922d-6013f31dd8d1",
-                "name": ">=70",
-                "uuid": "b39b09b5-22d3-41bc-a3f5-ae79648f9e46"
-              },
-              {
-                "exit_uuid": "72d95d8f-080f-4750-9d66-5a60a5dd71d2",
-                "name": "50-70",
-                "uuid": "fc48b01a-f967-4d5d-9db5-8181227ac683"
-              },
-              {
-                "exit_uuid": "d17bd51c-eed3-4bd9-a43e-210e04cfe975",
-                "name": "30-50",
-                "uuid": "fc419941-7fc9-4992-bb10-5b657fc8c74e"
-              },
-              {
-                "exit_uuid": "79e723ec-8994-48e5-8650-30e09491b8cd",
-                "name": "<30",
-                "uuid": "765da0c5-01cd-4ce4-85d5-997b1dbe347d"
-              },
-              {
-                "exit_uuid": "f82a73ad-5a5c-45b8-b2f2-f39081eae8ae",
-                "name": "Other",
-                "uuid": "1fb1aa68-76b9-43c9-b21c-f7b9e1f144fb"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "Age"
-          },
-          "exits": [
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "d48472a3-6f52-461a-922d-6013f31dd8d1"
-            },
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "72d95d8f-080f-4750-9d66-5a60a5dd71d2"
-            },
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "d17bd51c-eed3-4bd9-a43e-210e04cfe975"
-            },
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "79e723ec-8994-48e5-8650-30e09491b8cd"
-            },
-            {
-              "destination_uuid": "7a4853f4-63cb-41fe-a814-b8aa4d369325",
-              "uuid": "f82a73ad-5a5c-45b8-b2f2-f39081eae8ae"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "Child",
-                "Adult"
-              ],
-              "text": "How old were you when you learnt Yiddish?",
-              "type": "send_msg",
-              "uuid": "3e3dd702-d326-4d47-9c03-eebaecb9ed59"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "9b6d674a-66bc-4af5-8792-4edfae06d339",
-              "uuid": "9cbb663d-7e41-4c97-a73a-284775fd8e9d"
-            }
-          ],
-          "uuid": "8dec203f-7880-4a5e-b589-255749d81b17"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.\n",
-              "type": "send_msg",
-              "uuid": "5bfefb95-4c51-4893-b915-69b5ebdea812"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "8dec203f-7880-4a5e-b589-255749d81b17",
-              "uuid": "5f630fd3-d531-4bc7-a765-8a4484a21c8e"
-            }
-          ],
-          "uuid": "f7626584-3a44-4511-ad7c-451c4ab0f8f4"
-        },
-        {
-          "uuid": "9b6d674a-66bc-4af5-8792-4edfae06d339",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "8e0ccd55-4077-48c8-b231-86a6fc22bb2c",
-            "cases": [
-              {
-                "arguments": [
-                  "Child"
-                ],
-                "type": "has_any_word",
-                "uuid": "e5df8b96-c21a-4e21-bdf9-1d973d61790b",
-                "category_uuid": "1ead3bc5-0c68-4d33-84fd-5b2288b1cf08"
-              },
-              {
-                "arguments": [
-                  "Adult"
-                ],
-                "type": "has_any_word",
-                "uuid": "73968edc-a9ce-4d17-8d53-8ffd65f0aecf",
-                "category_uuid": "2adc119b-a8a5-4254-b275-5fbb8a5c041d"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "4ac5c539-d3b8-464d-9c65-9a934e2565bc",
-                "name": "Child",
-                "uuid": "1ead3bc5-0c68-4d33-84fd-5b2288b1cf08"
-              },
-              {
-                "exit_uuid": "649e64a0-d71c-4d44-a784-33660bcd9b7c",
-                "name": "Adult",
-                "uuid": "2adc119b-a8a5-4254-b275-5fbb8a5c041d"
-              },
-              {
-                "exit_uuid": "76221336-134e-49a7-bd0a-c00d987a9d14",
-                "name": "Other",
-                "uuid": "8e0ccd55-4077-48c8-b231-86a6fc22bb2c"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "AgeYiddish"
-          },
-          "exits": [
-            {
-              "destination_uuid": "739e07a7-d83c-4e2a-9b49-424a954619aa",
-              "uuid": "4ac5c539-d3b8-464d-9c65-9a934e2565bc"
-            },
-            {
-              "destination_uuid": "1fa62354-2286-4663-bc20-e0370943ac81",
-              "uuid": "649e64a0-d71c-4d44-a784-33660bcd9b7c"
-            },
-            {
-              "destination_uuid": "f7626584-3a44-4511-ad7c-451c4ab0f8f4",
-              "uuid": "76221336-134e-49a7-bd0a-c00d987a9d14"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "at home",
-                "in cheder",
-                "in yeshivah"
-              ],
-              "text": "Where did you learn Yiddish? ",
-              "type": "send_msg",
-              "uuid": "a0c90a67-d492-4e6f-a1ff-cdbc400a9f5e"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "34ca0ef1-536f-4db0-bb2f-c9b03450a73e",
-              "uuid": "fc3ba3bc-e31f-4b55-9adf-57ba36f341b1"
-            }
-          ],
-          "uuid": "739e07a7-d83c-4e2a-9b49-424a954619aa"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "04eac9db-06e5-47f0-abcc-fa5e5a36b9e4"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "739e07a7-d83c-4e2a-9b49-424a954619aa",
-              "uuid": "d74e3e8f-d85c-4455-9a48-1b7ddbfe6cb3"
-            }
-          ],
-          "uuid": "a31b7182-f878-4812-93e9-1f0ca844bc08"
-        },
-        {
-          "uuid": "34ca0ef1-536f-4db0-bb2f-c9b03450a73e",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "4a665e69-8e33-4528-9058-5148e5476ee6",
-            "cases": [
-              {
-                "arguments": [
-                  "home"
-                ],
-                "type": "has_any_word",
-                "uuid": "97541073-fc22-4441-88e2-572951a98b6a",
-                "category_uuid": "1293abc7-0720-4ae3-84ed-89050f596a72"
-              },
-              {
-                "arguments": [
-                  "Cheder"
-                ],
-                "type": "has_any_word",
-                "uuid": "c7a5cb1f-8c61-4da0-9648-29c78207d6c5",
-                "category_uuid": "0367bd3b-7201-404c-b8bc-5b7be279b4db"
-              },
-              {
-                "arguments": [
-                  "Yeshivah"
-                ],
-                "type": "has_any_word",
-                "uuid": "f8adb207-fe18-468b-9dc1-db509a452630",
-                "category_uuid": "291dbdb8-d92d-4f3f-a19d-8a3c45524b63"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "465d532e-abff-484b-b9d8-5894324c8d4f",
-                "name": "Home",
-                "uuid": "1293abc7-0720-4ae3-84ed-89050f596a72"
-              },
-              {
-                "exit_uuid": "dc3ce336-c55a-4e9a-b103-0928e411b86f",
-                "name": "Cheder",
-                "uuid": "0367bd3b-7201-404c-b8bc-5b7be279b4db"
-              },
-              {
-                "exit_uuid": "cd13a87c-6f60-44b9-b8a9-3e40597739bb",
-                "name": "Yeshivah",
-                "uuid": "291dbdb8-d92d-4f3f-a19d-8a3c45524b63"
-              },
-              {
-                "exit_uuid": "8731c955-4862-476b-b9a2-9f297a3e9915",
-                "name": "Other",
-                "uuid": "4a665e69-8e33-4528-9058-5148e5476ee6"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "LearningLocation"
-          },
-          "exits": [
-            {
-              "destination_uuid": "1fa62354-2286-4663-bc20-e0370943ac81",
-              "uuid": "465d532e-abff-484b-b9d8-5894324c8d4f"
-            },
-            {
-              "destination_uuid": "1fa62354-2286-4663-bc20-e0370943ac81",
-              "uuid": "dc3ce336-c55a-4e9a-b103-0928e411b86f"
-            },
-            {
-              "destination_uuid": "1fa62354-2286-4663-bc20-e0370943ac81",
-              "uuid": "cd13a87c-6f60-44b9-b8a9-3e40597739bb"
-            },
-            {
-              "destination_uuid": "a31b7182-f878-4812-93e9-1f0ca844bc08",
-              "uuid": "8731c955-4862-476b-b9a2-9f297a3e9915"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "USA",
-                "Israel",
-                "Great Britain",
-                "Canada",
-                "Belgium",
-                "Other"
-              ],
-              "text": "Where do you currently live?",
-              "type": "send_msg",
-              "uuid": "b7b12583-6e6c-4d4c-90fb-64a9946c9b9d"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "e92e3bf3-b9fc-4718-80c7-dec711dd3440",
-              "uuid": "7cb28de4-864a-40d4-9de9-769e2244022b"
-            }
-          ],
-          "uuid": "1fa62354-2286-4663-bc20-e0370943ac81"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "69583747-76f2-4079-96db-9a4cbcbb9ce9"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "1fa62354-2286-4663-bc20-e0370943ac81",
-              "uuid": "45d96760-c2c9-4200-be82-eae513f21177"
-            }
-          ],
-          "uuid": "18cf7642-1207-457d-bde1-5a952fd14fb8"
-        },
-        {
-          "uuid": "e92e3bf3-b9fc-4718-80c7-dec711dd3440",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "d2f6d481-65b9-4aa1-b90b-1f8353a79c16",
-            "cases": [
-              {
-                "arguments": [
-                  "USA"
-                ],
-                "type": "has_any_word",
-                "uuid": "4044f23f-1908-415d-9043-86640c8a4d1a",
-                "category_uuid": "7b9d1f2a-00e9-496d-89fe-ad203e2595e0"
-              },
-              {
-                "arguments": [
-                  "Israel"
-                ],
-                "type": "has_any_word",
-                "uuid": "ad9a3cdb-34b0-472a-a8c0-d3f95f9354f4",
-                "category_uuid": "2fe9794d-efd1-4a15-b43f-e5f5b591fc86"
-              },
-              {
-                "arguments": [
-                  "GB UK"
-                ],
-                "type": "has_any_word",
-                "uuid": "ca3eed9f-7565-419c-8175-1ea6184136e6",
-                "category_uuid": "001dbb77-4c6c-4214-895c-aa425c1ab19c"
-              },
-              {
-                "arguments": [
-                  "Canada"
-                ],
-                "type": "has_any_word",
-                "uuid": "7e8ac315-907c-44ce-9934-199ec0140639",
-                "category_uuid": "e48b471f-0ae8-4f2c-810c-6be0d33ba378"
-              },
-              {
-                "arguments": [
-                  "Belgium"
-                ],
-                "type": "has_any_word",
-                "uuid": "7bed16af-226f-4324-8fbc-8bfa24cea284",
-                "category_uuid": "f5e2e13c-2f68-4669-9462-11075f25a15f"
-              },
-              {
-                "arguments": [
-                  "Other"
-                ],
-                "type": "has_any_word",
-                "uuid": "5139fb98-cc76-4f59-90b5-c34d275779af",
-                "category_uuid": "a018c679-99a8-4694-84d5-abb96f112d33"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "763363e3-a66a-4442-a6f2-e3b429b5831c",
-                "name": "USA",
-                "uuid": "7b9d1f2a-00e9-496d-89fe-ad203e2595e0"
-              },
-              {
-                "exit_uuid": "55c6cf82-8e19-4aa2-9409-bd500c53242a",
-                "name": "Israel",
-                "uuid": "2fe9794d-efd1-4a15-b43f-e5f5b591fc86"
-              },
-              {
-                "exit_uuid": "aa3e5a8f-0e33-48e1-8dc1-0045059fff97",
-                "name": "GB",
-                "uuid": "001dbb77-4c6c-4214-895c-aa425c1ab19c"
-              },
-              {
-                "exit_uuid": "7df81b01-00d5-460c-8b14-55c8916038bc",
-                "name": "Canada",
-                "uuid": "e48b471f-0ae8-4f2c-810c-6be0d33ba378"
-              },
-              {
-                "exit_uuid": "34175287-da1a-46b0-a109-118f66c1f6aa",
-                "name": "Belgium",
-                "uuid": "f5e2e13c-2f68-4669-9462-11075f25a15f"
-              },
-              {
-                "uuid": "a018c679-99a8-4694-84d5-abb96f112d33",
-                "name": "OtherCountry",
-                "exit_uuid": "dd1b5b61-ba98-40b7-9e8c-4aeb9d598f13"
-              },
-              {
-                "exit_uuid": "94ad30ff-792a-4149-bb29-da5904117628",
-                "name": "Other",
-                "uuid": "d2f6d481-65b9-4aa1-b90b-1f8353a79c16"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "CountryOfResidence"
-          },
-          "exits": [
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "763363e3-a66a-4442-a6f2-e3b429b5831c"
-            },
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "55c6cf82-8e19-4aa2-9409-bd500c53242a"
-            },
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "aa3e5a8f-0e33-48e1-8dc1-0045059fff97"
-            },
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "7df81b01-00d5-460c-8b14-55c8916038bc"
-            },
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "34175287-da1a-46b0-a109-118f66c1f6aa"
-            },
-            {
-              "uuid": "dd1b5b61-ba98-40b7-9e8c-4aeb9d598f13",
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897"
-            },
-            {
-              "destination_uuid": "18cf7642-1207-457d-bde1-5a952fd14fb8",
-              "uuid": "94ad30ff-792a-4149-bb29-da5904117628"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "USA",
-                "Israel",
-                "Great Britain",
-                "Canada ",
-                "Belgium",
-                "Other"
-              ],
-              "text": "Where did you live when you learnt Yiddish?",
-              "type": "send_msg",
-              "uuid": "ec6c9516-8cf2-4300-9cc9-1df32e757d0a"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "0575a64c-6e23-4671-8b3c-79c0b5074d8b",
-              "uuid": "39660fa8-711e-4052-add1-2fd9804a711c"
-            }
-          ],
-          "uuid": "5620a342-b7ef-4577-85f3-be31d73ae897"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "4fb657e7-1c48-4d63-b970-9b892299b319"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "5620a342-b7ef-4577-85f3-be31d73ae897",
-              "uuid": "a00e02f2-d5b7-4cc5-8ae9-28dc8291dbb4"
-            }
-          ],
-          "uuid": "2f0bf102-a838-4b56-b897-75e6791456b1"
-        },
-        {
-          "uuid": "0575a64c-6e23-4671-8b3c-79c0b5074d8b",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "ffb090ae-72f0-4ab0-9204-77b41aaba7a6",
-            "cases": [
-              {
-                "arguments": [
-                  "USA"
-                ],
-                "type": "has_any_word",
-                "uuid": "287cecbc-1dfc-47c3-9634-453e13c614c3",
-                "category_uuid": "509e84ec-5a39-4872-a268-cb2ec708af5b"
-              },
-              {
-                "arguments": [
-                  "Israel"
-                ],
-                "type": "has_any_word",
-                "uuid": "bab0a56a-2359-4ce9-87a0-89cd19aaa058",
-                "category_uuid": "83c1ecf4-50cf-40d8-9357-397acff851f0"
-              },
-              {
-                "arguments": [
-                  "GB UK England Wales Scotland Ireland"
-                ],
-                "type": "has_any_word",
-                "uuid": "b1355654-195a-406b-a6e4-9594f6dd2fa7",
-                "category_uuid": "98e08ae0-84d9-454c-805c-6f6a5b6ca45b"
-              },
-              {
-                "arguments": [
-                  "Canada"
-                ],
-                "type": "has_any_word",
-                "uuid": "ce33b8a8-e62e-4394-b08e-794143ca00a3",
-                "category_uuid": "0b7fb97e-9873-4fb2-952f-4613209b47cf"
-              },
-              {
-                "arguments": [
-                  "Belgium"
-                ],
-                "type": "has_any_word",
-                "uuid": "95f540b4-bd21-42ec-880f-64b22c0f7ec9",
-                "category_uuid": "cd5a659e-db75-42ba-9870-fc760545e6a2"
-              },
-              {
-                "arguments": [
-                  "Other"
-                ],
-                "type": "has_any_word",
-                "uuid": "ab711611-a93f-4c31-baac-59e5bd1fa6da",
-                "category_uuid": "d6385d12-3745-4edf-b9d8-e4e05942cc35"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "c6d12911-bc72-4712-bcac-9f31b5489e0e",
-                "name": "USA",
-                "uuid": "509e84ec-5a39-4872-a268-cb2ec708af5b"
-              },
-              {
-                "exit_uuid": "3931d854-f99e-46fe-b89f-dbab1bad58f6",
-                "name": "Israel",
-                "uuid": "83c1ecf4-50cf-40d8-9357-397acff851f0"
-              },
-              {
-                "exit_uuid": "9da67a89-642c-4507-a889-3041f560511d",
-                "name": "GB",
-                "uuid": "98e08ae0-84d9-454c-805c-6f6a5b6ca45b"
-              },
-              {
-                "exit_uuid": "9381b7e8-f32a-4dca-a334-60da8efa04ab",
-                "name": "Canada",
-                "uuid": "0b7fb97e-9873-4fb2-952f-4613209b47cf"
-              },
-              {
-                "exit_uuid": "9241e080-48e3-4885-9708-7c1c7e940724",
-                "name": "Belgium",
-                "uuid": "cd5a659e-db75-42ba-9870-fc760545e6a2"
-              },
-              {
-                "exit_uuid": "3d6f738d-8698-48f2-9194-486bd7d3f210",
-                "name": "OtherCountry",
-                "uuid": "d6385d12-3745-4edf-b9d8-e4e05942cc35"
-              },
-              {
-                "exit_uuid": "e12f1e50-8ab3-40d2-b160-e5a002ed59e8",
-                "name": "Other",
-                "uuid": "ffb090ae-72f0-4ab0-9204-77b41aaba7a6"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "CountryOfLearning"
-          },
-          "exits": [
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "c6d12911-bc72-4712-bcac-9f31b5489e0e"
-            },
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "3931d854-f99e-46fe-b89f-dbab1bad58f6"
-            },
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "9da67a89-642c-4507-a889-3041f560511d"
-            },
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "9381b7e8-f32a-4dca-a334-60da8efa04ab"
-            },
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "9241e080-48e3-4885-9708-7c1c7e940724"
-            },
-            {
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746",
-              "uuid": "3d6f738d-8698-48f2-9194-486bd7d3f210"
-            },
-            {
-              "destination_uuid": "2f0bf102-a838-4b56-b897-75e6791456b1",
-              "uuid": "e12f1e50-8ab3-40d2-b160-e5a002ed59e8"
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
-              "text": "1. I consent to my personal information being kept by Zaydimayses.\n2. I consent to my story or tale being recorded, edited and kept by Zaydimayses and made available to other Zaydimayse users.\n3. I consent to Zaydimayses conducting scholarly activities on the recorded story content.\n4. My recorded story is not subject to copyright.\n5. To the best of my knowledge, my recorded story does not contain elements that are against Halacha, or the law or in any way disturbing or offensive.",
-              "type": "send_msg",
-              "uuid": "96eb2a64-afa1-4c44-9039-92cf5fd497a6"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "ad7676ff-2ab2-42c6-a230-f6f6a85fea20",
-              "uuid": "365ed43b-fe1d-4bda-9e48-a533a57d8623"
-            }
-          ],
-          "uuid": "be677285-b627-4055-9ec0-9b8217741746"
-        },
-        {
-          "uuid": "ad7676ff-2ab2-42c6-a230-f6f6a85fea20",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "9a86a6a7-cc96-4439-9fb1-6922d75828df",
-            "cases": [
-              {
-                "arguments": [
-                  "yes y"
-                ],
-                "type": "has_any_word",
-                "uuid": "48fd1504-8b6e-45f5-b1c9-886288e81faf",
-                "category_uuid": "d02cb7a6-8bd0-4fcb-ab89-bd5d15ec0f4d"
-              },
-              {
-                "arguments": [
-                  "no n"
-                ],
-                "type": "has_any_word",
-                "uuid": "23c0e21d-794b-430c-9620-6816ba3065ea",
-                "category_uuid": "475969c6-5908-4f77-b30f-198b1398dd06"
-              }
-            ],
-            "categories": [
-              {
-                "uuid": "d02cb7a6-8bd0-4fcb-ab89-bd5d15ec0f4d",
-                "name": "Yes",
-                "exit_uuid": "b30c33a0-e69d-4c12-ace0-40de89296915"
-              },
-              {
-                "uuid": "475969c6-5908-4f77-b30f-198b1398dd06",
-                "name": "No",
-                "exit_uuid": "6323cefb-c0ae-4580-a91a-dd77fd02a9b5"
-              },
-              {
-                "uuid": "9a86a6a7-cc96-4439-9fb1-6922d75828df",
-                "name": "Other",
-                "exit_uuid": "ca7297f3-cd03-49b9-aa14-0bb9a419e271"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "ConsentToAll"
-          },
-          "exits": [
-            {
-              "uuid": "b30c33a0-e69d-4c12-ace0-40de89296915",
-              "destination_uuid": "e17dfe40-975d-409b-9936-9664eee64285"
-            },
-            {
-              "uuid": "6323cefb-c0ae-4580-a91a-dd77fd02a9b5",
-              "destination_uuid": "db91a050-9999-4b6f-bd9a-1dd3b30f0f0b"
-            },
-            {
-              "uuid": "ca7297f3-cd03-49b9-aa14-0bb9a419e271",
-              "destination_uuid": "1a60d61c-6ce6-4690-9cc4-57a4e4455e49"
-            }
-          ]
-        },
-        {
-          "uuid": "1a60d61c-6ce6-4690-9cc4-57a4e4455e49",
-          "actions": [
-            {
-              "attachments": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "quick_replies": [],
-              "uuid": "3aa76d30-80fb-4ab0-ac72-3ca8f585bd9e"
-            }
-          ],
-          "exits": [
-            {
-              "uuid": "86fe1909-e33a-484d-996b-bc2cf970b45b",
-              "destination_uuid": "be677285-b627-4055-9ec0-9b8217741746"
-            }
-          ]
-        },
-        {
-          "uuid": "db91a050-9999-4b6f-bd9a-1dd3b30f0f0b",
-          "actions": [
-            {
-              "attachments": [],
-              "text": "STOP?",
-              "type": "send_msg",
-              "quick_replies": [],
-              "uuid": "7598d135-7cb9-4878-9caa-2daaa1148ca6"
-            }
-          ],
-          "exits": [
-            {
-              "uuid": "6b70be83-f0f6-4170-b027-65af58aec42c",
-              "destination_uuid": null
-            }
-          ]
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [
-                "Yes I agree",
-                "No I do not agree"
-              ],
-              "text": "I give my consent to being contacted by Zaydimayses in the future.",
-              "type": "send_msg",
-              "uuid": "6381fe09-f7ca-4baa-9aba-961cd6e0e994"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "e2dfb0d2-5172-4b1b-9804-02c398c02ad9",
-              "uuid": "196e62dc-5f47-45c7-88df-811b6b757abf"
-            }
-          ],
-          "uuid": "e17dfe40-975d-409b-9936-9664eee64285"
-        },
-        {
-          "actions": [
-            {
-              "attachments": [],
-              "quick_replies": [],
-              "text": "Please select an answer.",
-              "type": "send_msg",
-              "uuid": "828cf639-d46d-401b-aa6d-00ca31265070"
-            }
-          ],
-          "exits": [
-            {
-              "destination_uuid": "e17dfe40-975d-409b-9936-9664eee64285",
-              "uuid": "97566ba8-5f88-48e2-8502-53ef7a6605ab"
-            }
-          ],
-          "uuid": "f1aa725f-a6fe-4f7c-957e-51c1875f7ff3"
-        },
-        {
-          "uuid": "e2dfb0d2-5172-4b1b-9804-02c398c02ad9",
-          "actions": [],
-          "router": {
-            "type": "switch",
-            "default_category_uuid": "a504a1f7-ecd4-4924-8602-f5fbf4478fd8",
-            "cases": [
-              {
-                "arguments": [
-                  "Y Yes"
-                ],
-                "type": "has_any_word",
-                "uuid": "1fdf7a49-e3a0-466b-bffb-c99e7012e41e",
-                "category_uuid": "20bedcbe-41a9-4bfa-95e4-ecd742cef2d9"
-              },
-              {
-                "arguments": [
-                  "N No"
-                ],
-                "type": "has_any_word",
-                "uuid": "76b70d7f-2240-47fc-a93c-8ab7ebd2725c",
-                "category_uuid": "11c1a637-95b2-409b-8777-1e48291ebb6b"
-              }
-            ],
-            "categories": [
-              {
-                "exit_uuid": "5e273441-c7ae-4129-bece-f1d64243ba43",
-                "name": "Y",
-                "uuid": "20bedcbe-41a9-4bfa-95e4-ecd742cef2d9"
-              },
-              {
-                "exit_uuid": "b40f2028-9db1-400d-8200-3643175dcdd3",
-                "name": "N",
-                "uuid": "11c1a637-95b2-409b-8777-1e48291ebb6b"
-              },
-              {
-                "exit_uuid": "6f1d5a28-18c5-4799-8eab-9d645ca19b26",
-                "name": "Other",
-                "uuid": "a504a1f7-ecd4-4924-8602-f5fbf4478fd8"
-              }
-            ],
-            "operand": "@input.text",
-            "wait": {
-              "type": "msg"
-            },
-            "result_name": "ConsentToContact"
-          },
-          "exits": [
-            {
-              "destination_uuid": null,
-              "uuid": "5e273441-c7ae-4129-bece-f1d64243ba43"
-            },
-            {
-              "uuid": "b40f2028-9db1-400d-8200-3643175dcdd3"
-            },
-            {
-              "destination_uuid": "f1aa725f-a6fe-4f7c-957e-51c1875f7ff3",
-              "uuid": "6f1d5a28-18c5-4799-8eab-9d645ca19b26"
-            }
-          ]
-        }
-      ],
-      "spec_version": "13.1.0",
-      "type": "messaging",
-      "uuid": "5c6ff791-8a3c-4d6b-b668-7d85819270b5",
-      "revision": 64
+      "revision": 251
     }
   ],
   "campaigns": [],
-  "triggers": [
-    {
-      "trigger_type": "K",
-      "flow": {
-        "uuid": "53649255-234d-4edd-97c4-267b89e7e338",
-        "name": "Test 1 - Basic structure"
-      },
-      "groups": [],
-      "exclude_groups": [],
-      "keyword": "test1"
-    },
-    {
-      "trigger_type": "K",
-      "flow": {
-        "uuid": "6a8f10b9-c372-4279-bb5e-cbe4905950e4",
-        "name": "Test 2 - Grouped structure"
-      },
-      "groups": [],
-      "exclude_groups": [],
-      "keyword": "test2"
-    },
-    {
-      "trigger_type": "K",
-      "flow": {
-        "uuid": "5c6ff791-8a3c-4d6b-b668-7d85819270b5",
-        "name": "Test 3 - Grouped consent"
-      },
-      "groups": [],
-      "exclude_groups": [],
-      "keyword": "test3"
-    }
-  ],
+  "triggers": [],
   "fields": [
     {
       "key": "sex",

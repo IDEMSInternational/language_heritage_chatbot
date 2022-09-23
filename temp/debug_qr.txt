@@ -1,0 +1,756 @@
+
+
+Test 1 - Basic structure*************************************
+
+Are you a man or a woman?
+
+Please select the number for the following options:
+1. Man
+2. Woman
+arg: M
+arg: Man
+M,Man,Male,1,
+arg: Male
+arg list: M,Man,Male
+arg: F
+arg: Woman
+F,Woman,W,Female,2,
+arg: W
+arg: Female
+arg list: F,Woman,W,Female
+
+Do you have great-grand children?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you have grand-children?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you have children?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+How old are you?
+
+Please select the number for the following options:
+1. 70+
+2. Under 70
+arg: over
+NO MATCH 
+arg list: over
+arg: under
+under,2,
+arg list: under
+
+How old are you?
+
+
+Please select the number for the following options:
+1. 50-70
+2. Under 50
+arg: under
+under,younger,2,
+arg: younger
+arg list: under,younger
+
+How old are you?
+
+Please select the number for the following options:
+1. 30-50
+2. Under 30
+arg: under
+under,younger,2,
+arg: younger
+arg list: under,younger
+
+Did you learn Yiddish at home, as a child?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Did you learn Yiddish in cheder?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Did you learn Yiddish in the yeshivah?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Did you learn Yiddish when you were already an adult?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you currently live in the USA?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you currently live in Israel?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you currently live in Great Britain?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you currently live in Canada?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+Do you currently live in Belgium?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+At the time when you learnt Yiddish, did you live in the USA?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+At the time when you learnt Yiddish, did you live in Israel?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+At the time when you learnt Yiddish, did you live in Great Britain?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+At the time when you learnt Yiddish, did you live in Canada?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+At the time when you learnt Yiddish, did you live in Belgium?
+
+Please select the number for the following options:
+1. Yes
+0. No
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,0,
+arg list: N,No
+
+I consent to my personal information being kept by Zaydimayses.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I consent to my story or tale being recorded, edited and kept by Zaydimayses and made
+available to other Zaydimayse users.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I give consent to Zaydimayses conducting scholarly activities on the recorded story content.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+My recorded story is not subject to copyright.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+To the best of my knowledge, my recorded story does not contain elements that are
+against Halacha, or the law or in any way disturbing or offensive.
+
+Please select the number for the following options:
+1. Yes I agree 
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I give my consent to being contacted by Zaydimayses in the future.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+
+Test 2 - Grouped structure*************************************
+
+Are you a man or a woman?
+
+Please select the number for the following options:
+1. Man
+2. Woman
+arg: M
+arg: Man
+M,Man,Male,1,
+arg: Male
+arg list: M,Man,Male
+arg: F
+arg: Woman
+F,Woman,W,Female,2,
+arg: W
+arg: Female
+arg list: F,Woman,W,Female
+
+Do you have :
+
+Please select the number for the following options:
+1. great-grand children
+2. grand children
+3. children
+4. none of the above
+arg: great
+great,1,
+arg list: great
+arg: grand children
+2,
+arg: grandchildren
+NO MATCH 
+arg: children
+3,
+arg: none
+none,above,4,
+arg: above
+none,above,4,4,
+arg list: none,above
+
+How old were you when you learnt Yiddish?
+
+Please select the number for the following options:
+1. Child
+2. Adult
+arg: Child
+Child,1,
+arg list: Child
+arg: Adult
+Adult,2,
+arg list: Adult
+
+Where did you learn Yiddish? 
+
+Please select the number for the following options:
+1. at home
+2. in cheder
+3. in yeshivah
+arg: home
+home,1,
+arg list: home
+arg: Cheder
+Cheder,2,
+arg list: Cheder
+arg: Yeshivah
+Yeshivah,3,
+arg list: Yeshivah
+
+Where do you currently live?
+
+Please select the number for the following options:
+1. USA
+2. Israel
+3. Great Britain
+4. Canada
+5. Belgium
+6. Other
+arg: USA
+USA,1,
+arg list: USA
+arg: Israel
+Israel,2,
+arg list: Israel
+arg: GB
+arg: UK
+NO MATCH 
+arg list: GB,UK
+arg: Canada
+Canada,4,
+arg list: Canada
+arg: Belgium
+Belgium,5,
+arg list: Belgium
+arg: Other
+Other,6,
+arg list: Other
+
+Where did you live when you learnt Yiddish?
+
+Please select the number for the following options:
+1. USA
+2. Israel
+3. Great Britain
+4. Canada 
+5. Belgium
+6. Other
+arg: USA
+USA,1,
+arg list: USA
+arg: Israel
+Israel,2,
+arg list: Israel
+arg: GB
+arg: UK
+arg: England
+arg: Wales
+arg: Scotland
+arg: Ireland
+NO MATCH 
+arg list: GB,UK,England,Wales,Scotland,Ireland
+arg: Canada
+Canada,4,
+arg list: Canada
+arg: Belgium
+Belgium,5,
+arg list: Belgium
+arg: Other
+Other,6,
+arg list: Other
+
+I consent to my personal information being kept by Zaydimayses.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I consent to my story or tale being recorded, edited and kept by Zaydimayses and made available to other Zaydimayse users.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I give consent to Zaydimayses conducting scholarly activities on the recorded story content.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+My recorded story is not subject to copyright.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+To the best of my knowledge, my recorded story does not contain elements that are against Halacha, or the law or in any way disturbing or offensive.
+
+Please select the number for the following options:
+1. Yes I agree 
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+I give my consent to being contacted by Zaydimayses in the future.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
+
+
+Test 3 - Grouped consent*************************************
+
+Are you a man or a woman?
+
+Please select the number for the following options:
+1. Man
+2. Woman
+arg: M
+arg: Man
+M,Man,Male,1,
+arg: Male
+arg list: M,Man,Male
+arg: F
+arg: Woman
+F,Woman,W,Female,2,
+arg: W
+arg: Female
+arg list: F,Woman,W,Female
+
+Do you have :
+
+Please select the number for the following options:
+1. great-grand children
+2. grand children
+3. children
+4. none of the above
+arg: great
+NO MATCH 
+arg: grand children
+2,
+arg: grandchildren
+NO MATCH 
+arg: children
+3,
+arg: none
+none,above,4,
+arg: above
+none,above,4,4,
+arg list: none,above
+
+How old were you when you learnt Yiddish?
+
+Please select the number for the following options:
+1. Child
+2. Adult
+arg: Child
+Child,1,
+arg list: Child
+arg: Adult
+Adult,2,
+arg list: Adult
+
+Where did you learn Yiddish? 
+
+Please select the number for the following options:
+1. at home
+2. in cheder
+3. in yeshivah
+arg: home
+home,1,
+arg list: home
+arg: Cheder
+Cheder,2,
+arg list: Cheder
+arg: Yeshivah
+Yeshivah,3,
+arg list: Yeshivah
+
+Where do you currently live?
+
+Please select the number for the following options:
+1. USA
+2. Israel
+3. Great Britain
+4. Canada
+5. Belgium
+6. Other
+arg: USA
+USA,1,
+arg list: USA
+arg: Israel
+Israel,2,
+arg list: Israel
+arg: GB
+arg: UK
+NO MATCH 
+arg list: GB,UK
+arg: Canada
+Canada,4,
+arg list: Canada
+arg: Belgium
+Belgium,5,
+arg list: Belgium
+arg: Other
+Other,6,
+arg list: Other
+
+Where did you live when you learnt Yiddish?
+
+Please select the number for the following options:
+1. USA
+2. Israel
+3. Great Britain
+4. Canada 
+5. Belgium
+6. Other
+arg: USA
+USA,1,
+arg list: USA
+arg: Israel
+Israel,2,
+arg list: Israel
+arg: GB
+arg: UK
+arg: England
+arg: Wales
+arg: Scotland
+arg: Ireland
+NO MATCH 
+arg list: GB,UK,England,Wales,Scotland,Ireland
+arg: Canada
+Canada,4,
+arg list: Canada
+arg: Belgium
+Belgium,5,
+arg list: Belgium
+arg: Other
+Other,6,
+arg list: Other
+
+1. I consent to my personal information being kept by Zaydimayses.
+2. I consent to my story or tale being recorded, edited and kept by Zaydimayses and made available to other Zaydimayse users.
+3. I consent to Zaydimayses conducting scholarly activities on the recorded story content.
+4. My recorded story is not subject to copyright.
+5. To the best of my knowledge, my recorded story does not contain elements that are against Halacha, or the law or in any way disturbing or offensive.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: yes
+yes,y,1,
+arg: y
+arg list: yes,y
+arg: no
+no,n,2,
+arg: n
+arg list: no,n
+
+I give my consent to being contacted by Zaydimayses in the future.
+
+Please select the number for the following options:
+1. Yes I agree
+2. No I do not agree
+arg: Y
+arg: Yes
+Y,Yes,1,
+arg list: Y,Yes
+arg: N
+arg: No
+N,No,2,
+arg list: N,No
