@@ -70,7 +70,7 @@ Write-Output "Completed integrity check"
 
 
 # step 4: add quick replies to message text and translation
-
+$add_selectors = "yes"
 $input_path_4 = $output_path_1
 $source_file_name = $source_file_name + "_no_QR"
 $select_phrases_file = ".\edits\select_phrases.json"
